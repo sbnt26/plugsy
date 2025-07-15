@@ -12,7 +12,7 @@ const ContactSection = () => {
             Kontaktujte nás
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Máte otázky? Rádi vám pomůžeme s čímkoli, co potřebujete vědět o nabíjení elektromobilů
+            Máte otázky? Rádi vám pomůžeme s čímkoli, co potřebujete vědět.
           </p>
         </div>
 
