@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Award, Leaf, Target, MapPin, Zap, Shield, Clock } from "lucide-react";
+import { Users, Award, Leaf, Target, MapPin, Zap, Shield, Clock, Network, Coins, Smartphone } from "lucide-react";
 const AboutSection = () => {
   return <section id="about" className="py-20 bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ const AboutSection = () => {
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-6 h-6 text-primary" />
+                  <Network className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">5+ sítí</div>
                 <div className="text-sm text-muted-foreground">Připojeno přes OCPI (ČEZ, PRE, E.ON..)</div>
@@ -42,7 +42,7 @@ const AboutSection = () => {
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-6 h-6 text-primary" />
+                  <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">90 % pokrytí</div>
                 <div className="text-sm text-muted-foreground">Veřejná síť v ČR bez roamingových přirážek</div>
@@ -52,7 +52,7 @@ const AboutSection = () => {
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-6 h-6 text-primary" />
+                  <Coins className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">8,4 Kč/kWh</div>
                 <div className="text-sm text-muted-foreground">Reálná cena s Plugsy (napříč sítěmi)</div>
@@ -62,7 +62,7 @@ const AboutSection = () => {
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-6 h-6 text-primary" />
+                  <Smartphone className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">1 appka</div>
                 <div className="text-sm text-muted-foreground">Všechno nabíjení na jednom místě</div>
