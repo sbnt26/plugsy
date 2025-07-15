@@ -14,8 +14,7 @@ const HeroSection = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-8">
                 Nabíjej svobodně.<br /><span className="text-primary block mt-8">Plať férově.</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena. 
-Jednoduché, transparentní a dostupné pro každého.
+              <p className="text-xl text-muted-foreground max-w-2xl">Jedna aplikace. Jedna karta. Stejná cena na všech sítích – bez roamingových přirážek. Férové, jednoduché a připravené k použití během minut.
             </p>
             </div>
 
