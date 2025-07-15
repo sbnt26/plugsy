@@ -19,7 +19,13 @@ const Navigation = () => {
               originalLogoUrl={originalLogo} 
               onProcessed={setProcessedLogo} 
             />
-            <img src={processedLogo} alt="PlugEasy Logo" className="w-24 h-24" style={{ filter: 'brightness(0) saturate(100%) invert(70%) sepia(56%) saturate(4346%) hue-rotate(117deg) brightness(97%) contrast(86%)' }} />
+            <div 
+              className="w-24 h-24 bg-primary" 
+              style={{ 
+                WebkitMask: `url(${processedLogo}) no-repeat center/contain`,
+                mask: `url(${processedLogo}) no-repeat center/contain`
+              }}
+            />
           </div>
 
           {/* Desktop Navigation */}
