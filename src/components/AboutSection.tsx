@@ -18,7 +18,7 @@ const AboutSection = () => {
               Věříme, že férové a jednoduché nabíjení má být dostupné pro každého.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Proto jsme vytvořili Plugsy: • 1 appka • 1 karta • 1 férová cena – ve většině veřejných sítí
+              Proto jsme vytvořili Plugsy: jednu appku, jednu kartu a jednu férovou cenu – ve většině veřejných sítí.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Naším cílem je zpřístupnit nabíjení milionům lidí tak, aby bylo stejně jednoduché jako platba kartou.
