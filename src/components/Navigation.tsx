@@ -19,7 +19,7 @@ const Navigation = () => {
               originalLogoUrl={originalLogo} 
               onProcessed={setProcessedLogo} 
             />
-            <img src={processedLogo} alt="PlugEasy Logo" className="w-16 h-16" />
+            <img src={processedLogo} alt="PlugEasy Logo" className="w-24 h-24" />
           </div>
 
           {/* Desktop Navigation */}
