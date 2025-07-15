@@ -72,9 +72,7 @@ Jednoduché, transparentní a dostupné pro každého.
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       Nezávazná poptávka
                     </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Získejte informace o instalaci nabíjecí stanice
-                    </p>
+                    <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
                   </div>
 
                   <form className="space-y-4">
