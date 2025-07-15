@@ -2,33 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Smartphone, MapPin, CreditCard, BarChart3, Bell, Settings } from "lucide-react";
 import chargingStation from "@/assets/charging-station.jpg";
-
 const AppSection = () => {
-  return (
-    <section id="app" className="py-20 bg-background">
+  return <section id="app" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Vše v jedné aplikaci
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Najděte stanici, zahajte nabíjení a plaťte - vše jednoduše z mobilu
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Celé Česko. Jedna aplikace.
+        </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Najdi stanici, spusť nabíjení a plať bez přirážek – vše jednoduše v Plugsy app.
+        </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img
-              src={chargingStation}
-              alt="Nabíjecí stanice s mobilní aplikací"
-              className="w-full h-80 object-cover rounded-xl shadow-elegant"
-            />
+            <img src={chargingStation} alt="Nabíjecí stanice s mobilní aplikací" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">
-            <h3 className="text-2xl font-bold text-foreground">
-              Jednoduché nabíjení na dosah ruky
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground">Nabíjení pod palcem
+          </h3>
             
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
@@ -145,8 +136,6 @@ const AppSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AppSection;
