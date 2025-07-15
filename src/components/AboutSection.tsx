@@ -82,8 +82,7 @@ const AboutSection = () => {
                 Dostupnost
               </h4>
               <p className="text-muted-foreground">
-                Věříme, že elektromobilita musí být dostupná všem bez rozdílu. 
-                Proto nabízíme jednotné ceny bez skrytých poplatků.
+                Chceme, aby nabíjení bylo jednoduché a dostupné pro každého – bez ohledu na síť, značku auta nebo typ uživatele.
               </p>
             </CardContent>
           </Card>
