@@ -1,18 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, CreditCard, Smartphone } from "lucide-react";
-
 const PricingSection = () => {
-  return (
-    <section id="pricing" className="py-20 bg-gradient-hero">
+  return <section id="pricing" className="py-20 bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Transparentní cena pro všechny
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Žádné skryté poplatky, žádné měsíční paušály. Platíte pouze za energii, kterou spotřebujete.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Stejná cena za kWh. 
+        </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">U všech stanic platíš oficiální cenu operátora (např. ČEZ, PRE, E.ON). Plugsy si účtuje malý poplatek podle zvoleného tarifu.
+        </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -166,8 +162,6 @@ const PricingSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PricingSection;
