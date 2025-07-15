@@ -107,7 +107,8 @@ const NetworkSection = () => {
           
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">1 appka + 1 karta
+              <div className="text-3xl font-bold text-primary mb-2">1 appka
+1 karta
             </div>
               <div className="text-muted-foreground">Všechno nabíjení na jednom místě
             </div>
