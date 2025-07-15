@@ -94,9 +94,7 @@ const ContactSection = () => {
                 <p className="text-muted-foreground mb-3">
                   Máte problém s nabíjením? Kontaktujte naši 24/7 technickou podporu:
                 </p>
-                <p className="font-semibold text-primary text-lg">
-                  +420 800 POMOC (76 62)
-                </p>
+                <p className="font-semibold text-primary text-lg">+420 123 456 789</p>
               </CardContent>
             </Card>
           </div>
