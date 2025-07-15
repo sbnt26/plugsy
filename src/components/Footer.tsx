@@ -25,7 +25,7 @@ const Footer = () => {
                 }}
               />
             </div>
-            <p className="text-background/80">
+            <p className="text-background/80 -mt-2">
               Vedoucí poskytovatel služeb elektromobility v Česku. 
               Nabíjení pro všechny za stejnou cenu.
             </p>
