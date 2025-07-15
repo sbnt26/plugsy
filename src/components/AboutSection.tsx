@@ -1,17 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Award, Leaf, Target } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-hero">
+  return <section id="about" className="py-20 bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            O společnosti PlugEasy
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Vedoucí poskytovatel služeb elektromobility v Česku s vizí dostupného a udržitelného transportu pro všechny
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">O Plugsy</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">První česká platforma, která sjednocuje veřejné nabíjení elektromobilů napříč sítěmi – bez roamingových přirážek, bez chaosu, s jedinou aplikací.
+        </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -32,8 +27,8 @@ const AboutSection = () => {
           <div className="grid grid-cols-2 gap-6">
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Users className="w-6 h-6 text-accent-foreground" />
+                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">50K+</div>
                 <div className="text-sm text-muted-foreground">Spokojených zákazníků</div>
@@ -42,8 +37,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Award className="w-6 h-6 text-accent-foreground" />
+                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">5</div>
                 <div className="text-sm text-muted-foreground">Let na trhu</div>
@@ -52,8 +47,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Leaf className="w-6 h-6 text-accent-foreground" />
+                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Leaf className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm text-muted-foreground">Zelená energie</div>
@@ -62,8 +57,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-                  <Target className="w-6 h-6 text-accent-foreground" />
+                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-6 h-6 text-primary" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">1000+</div>
                 <div className="text-sm text-muted-foreground">Stanic do 2025</div>
@@ -76,8 +71,8 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
-                <Users className="w-8 h-8 text-accent-foreground" />
+              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Dostupnost
@@ -91,8 +86,8 @@ const AboutSection = () => {
 
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
-                <Leaf className="w-8 h-8 text-accent-foreground" />
+              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Leaf className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Udržitelnost
@@ -106,8 +101,8 @@ const AboutSection = () => {
 
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
-                <Award className="w-8 h-8 text-accent-foreground" />
+              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Kvalita
@@ -120,8 +115,6 @@ const AboutSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
