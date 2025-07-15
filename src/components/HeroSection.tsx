@@ -95,7 +95,7 @@ Jednoduché, transparentní a dostupné pro každého.
 
                     <div className="space-y-2">
                       <Label htmlFor="location">Lokalita</Label>
-                      <Input id="location" placeholder="Město, PSČ" className="border-border focus:ring-primary" />
+                      <Input id="location" placeholder="PSČ" className="border-border focus:ring-primary" />
                     </div>
 
                     <Button type="submit" className="w-full" variant="hero">
