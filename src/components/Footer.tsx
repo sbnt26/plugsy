@@ -1,6 +1,11 @@
 import { Zap, Mail, Phone, MapPin } from "lucide-react";
+import { useState } from "react";
+import { LogoProcessor } from "./LogoProcessor";
+
+const originalLogo = "/lovable-uploads/441b7c15-4b66-4a21-965a-d59a13a821b1.png";
 
 const Footer = () => {
+  const [processedLogo, setProcessedLogo] = useState<string>(originalLogo);
   return (
     <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -8,10 +13,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img 
-                src="/lovable-uploads/441b7c15-4b66-4a21-965a-d59a13a821b1.png" 
-                alt="PlugEasy Logo" 
-                className="h-8 w-auto"
+              <LogoProcessor 
+                originalLogoUrl={originalLogo} 
+                onProcessed={setProcessedLogo} 
+              />
+              <div 
+                className="w-32 h-32 bg-background" 
+                style={{ 
+                  WebkitMask: `url(${processedLogo}) no-repeat center/contain`,
+                  mask: `url(${processedLogo}) no-repeat center/contain`
+                }}
               />
             </div>
             <p className="text-background/80">
