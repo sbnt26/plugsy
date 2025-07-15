@@ -7,7 +7,7 @@ const NetworkSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Největší síť v Česku
+            1 aplikace, nabíjení kdekoliv
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Přes 500 rychlonabíjecích stanic na strategických místech po celé republice
