@@ -90,7 +90,7 @@ const AppSection = () => {
                   <Settings className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Nastavení podle tebe
+                  <h4 className="font-semibold text-foreground mb-1">Personalizace
                 </h4>
                   <p className="text-muted-foreground">
                     Nastavte si nabíjení podle vašich potřeb a preferencí
