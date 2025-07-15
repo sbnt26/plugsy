@@ -34,8 +34,8 @@ const AboutSection = () => {
                 <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <div className="text-2xl font-bold text-primary mb-2">50K+</div>
-                <div className="text-sm text-muted-foreground">Spokojených zákazníků</div>
+                <div className="text-2xl font-bold text-primary mb-2">5+</div>
+                <div className="text-sm text-muted-foreground">Sítí</div>
               </CardContent>
             </Card>
             
