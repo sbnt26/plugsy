@@ -23,8 +23,8 @@ const AppSection = () => {
             
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -36,8 +36,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Smartphone className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Smartphone className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Start přes QR nebo kartu
@@ -48,8 +48,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CreditCard className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CreditCard className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -62,8 +62,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <BarChart3 className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1"> Statistiky a historie
@@ -74,8 +74,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Bell className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Bell className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1"> Chytré notifikace
@@ -86,8 +86,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Settings className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Settings className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Personalizace
