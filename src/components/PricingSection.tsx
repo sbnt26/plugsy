@@ -1,14 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, CreditCard, Smartphone } from "lucide-react";
+
 const PricingSection = () => {
-  return <section id="pricing" className="py-20 bg-gradient-hero">
+  return (
+    <section id="pricing" className="py-20 bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Stejná cena za kWh. 
-        </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">U všech stanic platíš oficiální cenu operátora (např. ČEZ, PRE, E.ON). Plugsy si účtuje malý poplatek podle zvoleného tarifu.
-        </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Stejná cena za kWh. 
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            U všech stanic platíš oficiální cenu operátora (např. ČEZ, PRE, E.ON). Plugsy si účtuje malý poplatek podle zvoleného tarifu.
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -36,13 +40,14 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Dostupné ve většině lokalit
-                </span>
+                  <span className="text-foreground">Dostupné ve většině lokalit</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Plugsy poplatek:  
-od 0  Kč/relaci</span>
+                  <span className="text-foreground">
+                    Plugsy poplatek:<br />
+                    od 0 Kč/relaci
+                  </span>
                 </li>
               </ul>
             </CardContent>
@@ -81,8 +86,10 @@ od 0  Kč/relaci</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Plugsy poplatek: od 0  Kč/relaci
-                </span>
+                  <span className="text-foreground">
+                    Plugsy poplatek:<br />
+                    od 0 Kč/relaci
+                  </span>
                 </li>
               </ul>
             </CardContent>
@@ -104,8 +111,7 @@ od 0  Kč/relaci</span>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Nabíjení za 10–20 minut
-                </span>
+                  <span className="text-foreground">Nabíjení za 10–20 minut</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
@@ -117,8 +123,10 @@ od 0  Kč/relaci</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Plugsy poplatek:  
-od 0  Kč/relaci</span>
+                  <span className="text-foreground">
+                    Plugsy poplatek:<br />
+                    od 0 Kč/relaci
+                  </span>
                 </li>
               </ul>
             </CardContent>
@@ -167,6 +175,8 @@ od 0  Kč/relaci</span>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default PricingSection;
