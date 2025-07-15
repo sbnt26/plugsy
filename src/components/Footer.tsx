@@ -12,19 +12,17 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 items-start">
           {/* Company Info */}
           <div>
-            <div className="mb-2">
-              <LogoProcessor 
-                originalLogoUrl={originalLogo} 
-                onProcessed={setProcessedLogo} 
-              />
-              <div 
-                className="w-96 h-32 bg-primary" 
-                style={{ 
-                  WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
-                  mask: `url(${processedLogo}) no-repeat left top/contain`
-                }}
-              />
-            </div>
+            <LogoProcessor 
+              originalLogoUrl={originalLogo} 
+              onProcessed={setProcessedLogo} 
+            />
+            <div 
+              className="w-96 h-8 bg-primary mb-4" 
+              style={{ 
+                WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
+                mask: `url(${processedLogo}) no-repeat left top/contain`
+              }}
+            />
             <p className="text-background/80 mb-4">
               Vedoucí poskytovatel služeb elektromobility v Česku. 
               Nabíjení pro všechny za stejnou cenu.
