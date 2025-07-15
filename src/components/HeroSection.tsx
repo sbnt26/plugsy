@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
-import heroImage from "@/assets/hero-charging-photo.jpg";
+
 const HeroSection = () => {
   return <section className="bg-gradient-hero min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -108,7 +108,7 @@ Jednoduché, transparentní a dostupné pro každého.
 
         {/* Hero Image */}
         <div className="mt-16">
-          <img src={heroImage} alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
+          <img src="/lovable-uploads/230ffedf-86f9-461d-a743-c75598055ee9.png" alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
         </div>
       </div>
     </section>;
