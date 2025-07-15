@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 items-start">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div>
+          <div>
+            <div className="mb-2">
               <LogoProcessor 
                 originalLogoUrl={originalLogo} 
                 onProcessed={setProcessedLogo} 
@@ -25,11 +25,11 @@ const Footer = () => {
                 }}
               />
             </div>
-            <p className="text-background/80 -mt-2">
+            <p className="text-background/80 mb-4">
               Vedoucí poskytovatel služeb elektromobility v Česku. 
               Nabíjení pro všechny za stejnou cenu.
             </p>
-            <div className="space-y-2">
+            <div className="space-y-2 mt-4">
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4" />
                 <span>info@plugeasy.cz</span>
