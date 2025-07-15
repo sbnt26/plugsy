@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
-const heroImage = "/lovable-uploads/243ce1f6-e57f-4837-acc6-07ad44c73977.png";
+import heroImage from "@/assets/hero-charging-photo.jpg";
 const HeroSection = () => {
   return <section className="bg-gradient-hero min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[35px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center px-[35px]">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -15,11 +15,9 @@ const HeroSection = () => {
                 Nabíjení pro<br /><span className="block mt-6">všechny</span>
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">
-                1 aplikace, jedna karta, stejná cena.
-                <br />
-                Jednoduché, transparentní a dostupné pro každého.
-              </p>
+              <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena. 
+Jednoduché, transparentní a dostupné pro každého.
+            </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
