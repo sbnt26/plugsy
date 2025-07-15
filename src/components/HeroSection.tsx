@@ -4,10 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
 import heroImage from "@/assets/hero-charging.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="bg-gradient-hero min-h-screen flex items-center">
+  return <section className="bg-gradient-hero min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -50,7 +48,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Jedna cena</p>
-                  <p className="text-sm text-muted-foreground">Pro všechny</p>
+                  <p className="text-sm text-muted-foreground">pro všechny</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -82,40 +80,22 @@ const HeroSection = () => {
                   <form className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Jméno a příjmení</Label>
-                      <Input
-                        id="name"
-                        placeholder="Vaše jméno"
-                        className="border-border focus:ring-primary"
-                      />
+                      <Input id="name" placeholder="Vaše jméno" className="border-border focus:ring-primary" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email">E-mail</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="vas@email.cz"
-                        className="border-border focus:ring-primary"
-                      />
+                      <Input id="email" type="email" placeholder="vas@email.cz" className="border-border focus:ring-primary" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="phone">Telefonní číslo</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+420 123 456 789"
-                        className="border-border focus:ring-primary"
-                      />
+                      <Input id="phone" type="tel" placeholder="+420 123 456 789" className="border-border focus:ring-primary" />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="location">Lokalita</Label>
-                      <Input
-                        id="location"
-                        placeholder="Město, PSČ"
-                        className="border-border focus:ring-primary"
-                      />
+                      <Input id="location" placeholder="Město, PSČ" className="border-border focus:ring-primary" />
                     </div>
 
                     <Button type="submit" className="w-full" variant="hero">
@@ -130,15 +110,9 @@ const HeroSection = () => {
 
         {/* Hero Image */}
         <div className="mt-16">
-          <img
-            src={heroImage}
-            alt="Nabíjecí stanice"
-            className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant"
-          />
+          <img src={heroImage} alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
