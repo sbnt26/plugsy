@@ -18,7 +18,7 @@ const Footer = () => {
                 onProcessed={setProcessedLogo} 
               />
               <div 
-                className="w-32 h-32 bg-background" 
+                className="w-32 h-32 bg-primary" 
                 style={{ 
                   WebkitMask: `url(${processedLogo}) no-repeat center/contain`,
                   mask: `url(${processedLogo}) no-repeat center/contain`
