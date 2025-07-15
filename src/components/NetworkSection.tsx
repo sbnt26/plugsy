@@ -22,8 +22,8 @@ const NetworkSection = () => {
             
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <MapPin className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Strategické pokrytí
@@ -34,8 +34,8 @@ const NetworkSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Zap className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Efektivní nabíjení
@@ -46,8 +46,8 @@ const NetworkSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Shield className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Maximální dostupnost</h4>
@@ -57,8 +57,8 @@ const NetworkSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Clock className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">24/7 zákaznická podpora
@@ -80,8 +80,7 @@ const NetworkSection = () => {
         <div className="grid md:grid-cols-4 gap-6">
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">15+ sítí
-            </div>
+              <div className="text-3xl font-bold text-primary mb-2">5+ sítí</div>
               <div className="text-muted-foreground">Připojeno přes OCPI (ČEZ, PRE, E.ON..)</div>
             </CardContent>
           </Card>
