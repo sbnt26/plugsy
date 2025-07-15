@@ -1,28 +1,19 @@
 import { Zap, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { LogoProcessor } from "./LogoProcessor";
-
 const originalLogo = "/lovable-uploads/3eae5d7d-a00d-4674-92d8-52b7f381e53e.png";
-
 const Footer = () => {
   const [processedLogo, setProcessedLogo] = useState<string>(originalLogo);
-  return (
-    <footer className="bg-foreground text-background">
+  return <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 items-start">
           {/* Company Info */}
           <div>
-            <LogoProcessor 
-              originalLogoUrl={originalLogo} 
-              onProcessed={setProcessedLogo} 
-            />
-            <div 
-              className="w-[1200px] h-24 bg-primary mb-2" 
-              style={{ 
-                WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
-                mask: `url(${processedLogo}) no-repeat left top/contain`
-              }}
-            />
+            <LogoProcessor originalLogoUrl={originalLogo} onProcessed={setProcessedLogo} />
+            <div className="w-[1200px] h-24 bg-primary mb-2" style={{
+            WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
+            mask: `url(${processedLogo}) no-repeat left top/contain`
+          }} />
             <p className="text-background/80 mb-4">
               Platforma pro jednoduché nabíjení v celé ČR. Vše pod jednou střechou.
             </p>
@@ -80,13 +71,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
-          <p className="text-background/60">
-            © 2025 PlugEasy s.r.o. Všechna práva vyhrazena.
-          </p>
+          <p className="text-background/60">© 2025 Plugsy Company s.r.o. Všechna práva vyhrazena.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
