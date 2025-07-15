@@ -24,8 +24,7 @@ const Footer = () => {
               }}
             />
             <p className="text-background/80 mb-4">
-              Vedoucí poskytovatel služeb elektromobility v Česku. 
-              Nabíjení pro všechny za stejnou cenu.
+              Platforma pro jednoduché nabíjení v celé ČR. Vše pod jednou střechou.
             </p>
             <div className="space-y-2 mt-4">
               <div className="flex items-center gap-2 text-sm">
