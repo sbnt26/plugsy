@@ -2,7 +2,7 @@ import { Zap, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { LogoProcessor } from "./LogoProcessor";
 
-const originalLogo = "/lovable-uploads/441b7c15-4b66-4a21-965a-d59a13a821b1.png";
+const originalLogo = "/lovable-uploads/3eae5d7d-a00d-4674-92d8-52b7f381e53e.png";
 
 const Footer = () => {
   const [processedLogo, setProcessedLogo] = useState<string>(originalLogo);
