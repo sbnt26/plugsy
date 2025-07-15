@@ -82,7 +82,7 @@ const NetworkSection = () => {
             <CardContent className="p-6">
               <div className="text-3xl font-bold text-primary mb-2">15+ sítí
             </div>
-              <div className="text-muted-foreground">Připojeno přes OCPI (ČEZ, PRE, E.ON, Shell…)</div>
+              <div className="text-muted-foreground">Připojeno přes OCPI (ČEZ, PRE, E.ON..)</div>
             </CardContent>
           </Card>
           
@@ -106,7 +106,10 @@ const NetworkSection = () => {
           
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">1 appka</div>
+              <div className="text-3xl font-bold text-primary mb-2">
+                1 appka,<br />
+                1 karta
+              </div>
               <div className="text-muted-foreground">Všechno nabíjení na jednom místě
             </div>
             </CardContent>
