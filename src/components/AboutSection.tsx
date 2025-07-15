@@ -96,8 +96,7 @@ const AboutSection = () => {
                 Udržitelnost
               </h4>
               <p className="text-muted-foreground">
-                Všechna naše energie pochází z obnovitelných zdrojů. 
-                Každé nabití přispívá k čistšímu prostředí.
+                Naším cílem je umožnit čistší mobilitu s minimálním dopadem a maximálním smyslem.
               </p>
             </CardContent>
           </Card>
