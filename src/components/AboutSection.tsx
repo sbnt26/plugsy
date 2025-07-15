@@ -110,8 +110,7 @@ const AboutSection = () => {
                 Kvalita
               </h4>
               <p className="text-muted-foreground">
-                Investujeme do nejmodernějších technologií a poskytujeme 
-                špičkový zákaznický servis 24/7.
+                Podpora Plugsy je tu pro tebe 24/7 – bez výmluv a bez čekání.
               </p>
             </CardContent>
           </Card>
