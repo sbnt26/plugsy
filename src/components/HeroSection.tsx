@@ -15,7 +15,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Nabíjení pro všechny
-                <span className="text-primary block">za stejnou cenu</span>
+                <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 Největší síť rychlonabíjecích stanic v Česku. Jednoduché, transparentní a dostupné pro každého.
