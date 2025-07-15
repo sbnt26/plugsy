@@ -15,7 +15,8 @@ const HeroSection = () => {
                 Nabíjení pro<br /><span className="block mt-6">všechny</span>
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena.  
+              <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena.
+
 Jednoduché, transparentní a dostupné pro každého.
             </p>
             </div>
@@ -108,7 +109,7 @@ Jednoduché, transparentní a dostupné pro každého.
 
         {/* Hero Image */}
         <div className="mt-16">
-          <img src="/lovable-uploads/c8fe17a6-b294-42e9-9a8a-439f777790a2.png" alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
+          <img src={heroImage} alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
         </div>
       </div>
     </section>;
