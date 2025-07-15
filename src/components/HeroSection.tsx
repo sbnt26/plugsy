@@ -44,7 +44,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Fixní cena</p>
-                  <p className="text-sm text-muted-foreground">pro všechny</p>
+                  <p className="text-sm text-muted-foreground">za kWh</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
