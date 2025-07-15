@@ -16,8 +16,8 @@ const HeroSection = () => {
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena.
-
-Jednoduché, transparentní a dostupné pro každého.
+                <br />
+                Jednoduché, transparentní a dostupné pro každého.
             </p>
             </div>
 
