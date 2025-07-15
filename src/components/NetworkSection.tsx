@@ -82,28 +82,35 @@ const NetworkSection = () => {
             <CardContent className="p-6">
               <div className="text-3xl font-bold text-primary mb-2">15+ sítí
             </div>
-              <div className="text-muted-foreground">Nabíjecích stanic</div>
+              <div className="text-muted-foreground">Připojeno přes OCPI
+            </div>
             </CardContent>
           </Card>
           
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">1200+</div>
-              <div className="text-muted-foreground">Nabíjecích bodů</div>
+              <div className="text-3xl font-bold text-primary mb-2">90 % pokrytí
+            </div>
+              <div className="text-muted-foreground">Veřejná síť v ČR bez roamingových přirážek
+            </div>
             </CardContent>
           </Card>
           
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">150kW</div>
-              <div className="text-muted-foreground">Maximální výkon</div>
+              <div className="text-3xl font-bold text-primary mb-2">8,4 Kč/kWh
+            </div>
+              <div className="text-muted-foreground">Reálná cena s Plugsy (napříč sítěmi)
+            </div>
             </CardContent>
           </Card>
           
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">99.5%</div>
-              <div className="text-muted-foreground">Dostupnost</div>
+              <div className="text-3xl font-bold text-primary mb-2">1 appka + 1 karta
+            </div>
+              <div className="text-muted-foreground">Všechno nabíjení na jednom místě
+            </div>
             </CardContent>
           </Card>
         </div>
