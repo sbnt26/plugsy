@@ -15,9 +15,7 @@ const AboutSection = () => {
               Naše mise
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Věříme, že elektromobilita by měla být dostupná každému bez ohledu na typ vozidla nebo místo bydliště. 
-              Proto budujeme největší a nejspolehlivější síť rychlonabíjecích stanic v Česku s jednotnou, 
-              transparentní cenou pro všechny uživatele.
+              Věříme, že férové a jednoduché nabíjení má být dostupné pro každého.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro miliony lidí.
