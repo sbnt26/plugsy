@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
-import heroImage from "@/assets/hero-charging-photo.jpg";
+import heroImage from "/lovable-uploads/101609b5-0cf6-447c-9307-f0fdad521266.png";
 const HeroSection = () => {
   return <section className="bg-gradient-hero min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[35px]">
