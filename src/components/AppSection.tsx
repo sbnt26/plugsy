@@ -14,7 +14,7 @@ const AppSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img src={iphoneMockup} alt="iPhone s aplikací Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
+            <img src="/lovable-uploads/7117454e-03c4-4c30-8374-62c7cdaa16ea.png" alt="iPhone s aplikací Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">
