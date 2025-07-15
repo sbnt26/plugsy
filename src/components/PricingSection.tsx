@@ -28,7 +28,7 @@ const PricingSection = () => {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Ideální pro delší pobyt</span>
+                  <span className="text-foreground">Ideální pro delší parkování</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
@@ -40,7 +40,8 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">24/7 dostupnost</span>
+                  <span className="text-foreground">Dostupné ve většině lokalit
+                </span>
                 </li>
               </ul>
             </CardContent>
