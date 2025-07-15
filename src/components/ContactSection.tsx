@@ -4,10 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="py-20 bg-background">
+  return <section id="contact" className="bg-background py-[40px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -27,8 +25,8 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <MapPin className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -43,8 +41,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Phone className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -58,8 +56,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Mail className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -73,8 +71,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Clock className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -115,59 +113,32 @@ const ContactSection = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">Jméno</Label>
-                    <Input
-                      id="firstName"
-                      placeholder="Vaše jméno"
-                      className="border-border focus:ring-primary"
-                    />
+                    <Input id="firstName" placeholder="Vaše jméno" className="border-border focus:ring-primary" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Příjmení</Label>
-                    <Input
-                      id="lastName"
-                      placeholder="Vaše příjmení"
-                      className="border-border focus:ring-primary"
-                    />
+                    <Input id="lastName" placeholder="Vaše příjmení" className="border-border focus:ring-primary" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email">E-mail</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="vas@email.cz"
-                    className="border-border focus:ring-primary"
-                  />
+                  <Input id="email" type="email" placeholder="vas@email.cz" className="border-border focus:ring-primary" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Telefonní číslo</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    placeholder="+420 123 456 789"
-                    className="border-border focus:ring-primary"
-                  />
+                  <Input id="phone" type="tel" placeholder="+420 123 456 789" className="border-border focus:ring-primary" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Předmět</Label>
-                  <Input
-                    id="subject"
-                    placeholder="Stručně popište váš dotaz"
-                    className="border-border focus:ring-primary"
-                  />
+                  <Input id="subject" placeholder="Stručně popište váš dotaz" className="border-border focus:ring-primary" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Zpráva</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Podrobně popište váš dotaz nebo problém..."
-                    rows={5}
-                    className="border-border focus:ring-primary"
-                  />
+                  <Textarea id="message" placeholder="Podrobně popište váš dotaz nebo problém..." rows={5} className="border-border focus:ring-primary" />
                 </div>
 
                 <Button type="submit" className="w-full" variant="hero">
@@ -178,8 +149,6 @@ const ContactSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
