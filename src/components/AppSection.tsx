@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, MapPin, CreditCard, BarChart3, Bell, Settings } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-mockup-plugsy.jpg";
 const AppSection = () => {
-  return <section id="app" className="py-20 bg-gradient-hero">
+  return <section id="app" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Celé Česko. Jedna aplikace.
@@ -14,7 +14,7 @@ const AppSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img src="/lovable-uploads/74422740-5b16-492b-83cd-6f362bfdf323.png" alt="iPhone s aplikací Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
+            <img src={iphoneMockup} alt="iPhone s aplikací Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">
@@ -23,36 +23,33 @@ const AppSection = () => {
             
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <MapPin className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
                     Mapa stanic
                   </h4>
-                  <p className="text-muted-foreground">
-                    Najděte nejbližší stanici s aktuálním stavem a dostupností
-                  </p>
+                  <p className="text-muted-foreground">Najdeš stanice podle aktuální dostupnosti a výkonu.
+                </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Smartphone className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Smartphone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    QR kód start
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Zahajte nabíjení jednoduchým naskenováním QR kódu
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1">Start přes QR nebo kartu
+                </h4>
+                  <p className="text-muted-foreground">Nabíjení zahájíš mobilem nebo RFID Plugsy kartou.
+                </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <CreditCard className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CreditCard className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -65,41 +62,36 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <BarChart3 className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Statistiky nabíjení
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Sledujte své nabíjení, úspory a spotřebu energie
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1"> Statistiky a historie
+                </h4>
+                  <p className="text-muted-foreground">Přehled o úsporách, kWh i oblíbených stanicích.
+                </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Bell className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Bell className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Notifikace
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Upozornění na dokončení nabíjení a stav baterie
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1"> Chytré notifikace
+                </h4>
+                  <p className="text-muted-foreground">Upozornění na dokončení nabíjení, stav účtu nebo problémy.
+                </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
-                  <Settings className="w-5 h-5 text-accent-foreground" />
+                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Settings className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Personalizace
-                  </h4>
+                  <h4 className="font-semibold text-foreground mb-1">Nastavení podle tebe
+                </h4>
                   <p className="text-muted-foreground">
                     Nastavte si nabíjení podle vašich potřeb a preferencí
                   </p>
@@ -111,7 +103,7 @@ const AppSection = () => {
 
         {/* Download Section */}
         <div className="mt-16">
-          <Card className="bg-gradient-primary p-8 text-center shadow-glow border-primary/20">
+          <Card className="bg-gradient-primary p-8 text-center shadow-elegant">
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-primary-foreground">
