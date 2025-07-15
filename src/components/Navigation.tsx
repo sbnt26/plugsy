@@ -19,7 +19,7 @@ const Navigation = () => {
               originalLogoUrl={originalLogo} 
               onProcessed={setProcessedLogo} 
             />
-            <img src={processedLogo} alt="PlugEasy Logo" className="w-24 h-24 brightness-0 saturate-100" style={{ filter: 'invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%)' }} />
+            <img src={processedLogo} alt="PlugEasy Logo" className="w-24 h-24" style={{ filter: 'brightness(0) saturate(100%) invert(70%) sepia(56%) saturate(4346%) hue-rotate(117deg) brightness(97%) contrast(86%)' }} />
           </div>
 
           {/* Desktop Navigation */}
