@@ -34,9 +34,6 @@ function resizeImageIfNeeded(canvas: HTMLCanvasElement, ctx: CanvasRenderingCont
 export const removeBackground = async (imageElement: HTMLImageElement): Promise<Blob> => {
   try {
     console.log('Starting background removal process...');
-    const segmenter = await pipeline('image-segmentation', 'Xenova/segformer-b0-finetuned-ade-512-512',{
-      device: 'webgpu',
-    });
     
     // Convert HTMLImageElement to canvas
     const canvas = document.createElement('canvas');
@@ -48,21 +45,7 @@ export const removeBackground = async (imageElement: HTMLImageElement): Promise<
     const wasResized = resizeImageIfNeeded(canvas, ctx, imageElement);
     console.log(`Image ${wasResized ? 'was' : 'was not'} resized. Final dimensions: ${canvas.width}x${canvas.height}`);
     
-    // Get image data as base64
-    const imageData = canvas.toDataURL('image/jpeg', 0.8);
-    console.log('Image converted to base64');
-    
-    // Process the image with the segmentation model
-    console.log('Processing with segmentation model...');
-    const result = await segmenter(imageData);
-    
-    console.log('Segmentation result:', result);
-    
-    if (!result || !Array.isArray(result) || result.length === 0 || !result[0].mask) {
-      throw new Error('Invalid segmentation result');
-    }
-    
-    // Create a new canvas for the masked image
+    // Create output canvas
     const outputCanvas = document.createElement('canvas');
     outputCanvas.width = canvas.width;
     outputCanvas.height = canvas.height;
@@ -73,23 +56,54 @@ export const removeBackground = async (imageElement: HTMLImageElement): Promise<
     // Draw original image
     outputCtx.drawImage(canvas, 0, 0);
     
-    // Apply the mask
-    const outputImageData = outputCtx.getImageData(
-      0, 0,
-      outputCanvas.width,
-      outputCanvas.height
-    );
-    const data = outputImageData.data;
+    // Get the original image data
+    const imageData = outputCtx.getImageData(0, 0, outputCanvas.width, outputCanvas.height);
+    const data = imageData.data;
     
-    // Apply inverted mask to alpha channel
-    for (let i = 0; i < result[0].mask.data.length; i++) {
-      // Invert the mask value (1 - value) to keep the subject instead of the background
-      const alpha = Math.round((1 - result[0].mask.data[i]) * 255);
-      data[i * 4 + 3] = alpha;
+    // For logos, we want to be more aggressive with background removal
+    // We'll look for the most common color (likely the background) and remove it
+    const colorCounts = new Map<string, number>();
+    
+    // Count pixel colors
+    for (let i = 0; i < data.length; i += 4) {
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+      const colorKey = `${r},${g},${b}`;
+      colorCounts.set(colorKey, (colorCounts.get(colorKey) || 0) + 1);
     }
     
-    outputCtx.putImageData(outputImageData, 0, 0);
-    console.log('Mask applied successfully');
+    // Find the most common color (likely background)
+    let maxCount = 0;
+    let backgroundColorKey = '';
+    for (const [colorKey, count] of colorCounts) {
+      if (count > maxCount) {
+        maxCount = count;
+        backgroundColorKey = colorKey;
+      }
+    }
+    
+    const [bgR, bgG, bgB] = backgroundColorKey.split(',').map(Number);
+    
+    // Remove background color with tolerance
+    const tolerance = 30;
+    for (let i = 0; i < data.length; i += 4) {
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+      
+      // Check if pixel is close to background color
+      const colorDistance = Math.sqrt(
+        Math.pow(r - bgR, 2) + Math.pow(g - bgG, 2) + Math.pow(b - bgB, 2)
+      );
+      
+      if (colorDistance < tolerance) {
+        data[i + 3] = 0; // Make transparent
+      }
+    }
+    
+    outputCtx.putImageData(imageData, 0, 0);
+    console.log('Background removed successfully');
     
     // Convert canvas to blob
     return new Promise((resolve, reject) => {
