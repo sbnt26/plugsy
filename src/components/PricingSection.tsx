@@ -18,7 +18,7 @@ const PricingSection = () => {
               <CardTitle className="text-2xl font-bold text-foreground">
                 AC Nabíjení
               </CardTitle>
-              <div className="text-4xl font-bold text-primary">≈8,4 Kč</div>
+              <div className="text-4xl font-bold text-primary">≈ 8,4 Kč</div>
               <div className="text-muted-foreground">za kWh</div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -57,7 +57,7 @@ const PricingSection = () => {
               <CardTitle className="text-2xl font-bold text-foreground">
                 DC Rychlonabíjení
               </CardTitle>
-              <div className="text-4xl font-bold text-primary">12,90 Kč</div>
+              <div className="text-4xl font-bold text-primary">≈ 11,4 Kč</div>
               <div className="text-muted-foreground">za kWh</div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -91,7 +91,7 @@ const PricingSection = () => {
               <CardTitle className="text-2xl font-bold text-foreground">
                 DC Ultra rychlé
               </CardTitle>
-              <div className="text-4xl font-bold text-primary">15,90 Kč</div>
+              <div className="text-4xl font-bold text-primary">≈ 14,6 Kč</div>
               <div className="text-muted-foreground">za kWh</div>
             </CardHeader>
             <CardContent className="space-y-4">
