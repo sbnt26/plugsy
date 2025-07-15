@@ -12,8 +12,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-8">
-                Nabíjení pro<br /><span className="block mt-6">všechny</span>
-                <span className="text-primary block mt-4">za stejnou cenu</span>
+                Nabíjej svobodně.<br /><span className="text-primary block mt-4">Plať férově.</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena. 
 Jednoduché, transparentní a dostupné pro každého.
