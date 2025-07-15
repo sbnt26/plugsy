@@ -60,12 +60,10 @@ const NetworkSection = () => {
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    24/7 podpora
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Nonstop technická podpora a zákaznický servis
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1">24/7 zákaznická podpora
+                </h4>
+                  <p className="text-muted-foreground">Pomůžeme kdykoliv – přímo v aplikaci nebo na lince podpory.
+                </p>
                 </div>
               </div>
             </div>
