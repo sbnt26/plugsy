@@ -23,7 +23,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden">
+          <div className="hidden md:flex items-center space-x-8">
             <a href="#network" className="text-foreground hover:text-primary transition-colors">
               Síť stanic
             </a>
@@ -45,7 +45,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div>
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"
@@ -62,7 +62,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div>
+          <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
               <a
                 href="#network"
