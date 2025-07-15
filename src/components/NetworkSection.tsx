@@ -10,7 +10,7 @@ const NetworkSection = () => {
             1 aplikace, nabíjení kdekoliv
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Přes 500 rychlonabíjecích stanic na strategických místech po celé republice
+            Za jednu cenu pro všechny a hlavně kdekoliv.
           </p>
         </div>
 
