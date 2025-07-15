@@ -36,12 +36,13 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Nejnižší cena</span>
+                  <span className="text-foreground">Dostupné ve většině lokalit
+                </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Dostupné ve většině lokalit
-                </span>
+                  <span className="text-foreground">Plugsy poplatek:  
+od 0  Kč/relaci</span>
                 </li>
               </ul>
             </CardContent>
@@ -80,7 +81,8 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Prémiová lokace</span>
+                  <span className="text-foreground">Plugsy poplatek: od 0  Kč/relaci
+                </span>
                 </li>
               </ul>
             </CardContent>
@@ -102,7 +104,8 @@ const PricingSection = () => {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Nabití za 15-30 minut</span>
+                  <span className="text-foreground">Nabíjení za 10–20 minut
+                </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
@@ -114,7 +117,8 @@ const PricingSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground">Prémiový servis</span>
+                  <span className="text-foreground">Plugsy poplatek:  
+od 0  Kč/relaci</span>
                 </li>
               </ul>
             </CardContent>
