@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, MapPin, CreditCard, BarChart3, Bell, Settings } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-mockup-plugsy.jpg";
 const AppSection = () => {
-  return <section id="app" className="py-20 bg-background">
+  return <section id="app" className="py-20 bg-gradient-hero">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Celé Česko. Jedna aplikace.
@@ -23,8 +23,8 @@ const AppSection = () => {
             
             <div className="grid gap-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <MapPin className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -37,8 +37,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Smartphone className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Smartphone className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -51,8 +51,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CreditCard className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <CreditCard className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -65,8 +65,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <BarChart3 className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <BarChart3 className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -79,8 +79,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Bell className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Bell className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -93,8 +93,8 @@ const AppSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Settings className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Settings className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -111,7 +111,7 @@ const AppSection = () => {
 
         {/* Download Section */}
         <div className="mt-16">
-          <Card className="bg-gradient-primary p-8 text-center shadow-elegant">
+          <Card className="bg-gradient-primary p-8 text-center shadow-glow border-primary/20">
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-primary-foreground">
