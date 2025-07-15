@@ -24,7 +24,7 @@ const AboutSection = () => {
               Naším cílem je zpřístupnit nabíjení všem lidem tak, aby bylo stejně jednoduché jako platba kartou.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro miliony lidí.
+              Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro všechny lidi.
             </p>
           </div>
           
