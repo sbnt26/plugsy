@@ -32,8 +32,8 @@ const AboutSection = () => {
           <div className="grid grid-cols-2 gap-6">
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Users className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">50K+</div>
                 <div className="text-sm text-muted-foreground">Spokojených zákazníků</div>
@@ -42,8 +42,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Award className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">5</div>
                 <div className="text-sm text-muted-foreground">Let na trhu</div>
@@ -52,8 +52,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Leaf className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Leaf className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm text-muted-foreground">Zelená energie</div>
@@ -62,8 +62,8 @@ const AboutSection = () => {
             
             <Card className="text-center shadow-elegant">
               <CardContent className="p-6">
-                <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
+                  <Target className="w-6 h-6 text-accent-foreground" />
                 </div>
                 <div className="text-2xl font-bold text-primary mb-2">1000+</div>
                 <div className="text-sm text-muted-foreground">Stanic do 2025</div>
@@ -76,8 +76,8 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                <Users className="w-8 h-8 text-accent-foreground" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Dostupnost
@@ -91,8 +91,8 @@ const AboutSection = () => {
 
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Leaf className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                <Leaf className="w-8 h-8 text-accent-foreground" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Udržitelnost
@@ -106,8 +106,8 @@ const AboutSection = () => {
 
           <Card className="shadow-elegant">
             <CardContent className="p-6 text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                <Award className="w-8 h-8 text-accent-foreground" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
                 Kvalita

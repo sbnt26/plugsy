@@ -27,8 +27,8 @@ const ContactSection = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <MapPin className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -43,8 +43,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Phone className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -58,8 +58,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Mail className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">
@@ -73,8 +73,8 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                  <Clock className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">

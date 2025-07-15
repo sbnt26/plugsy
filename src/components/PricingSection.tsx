@@ -139,8 +139,8 @@ const PricingSection = () => {
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center">
-                <Smartphone className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center shadow-md">
+                <Smartphone className="w-6 h-6 text-accent-foreground" />
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-1">
@@ -153,8 +153,8 @@ const PricingSection = () => {
             </div>
             
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-primary-light rounded-lg flex items-center justify-center">
-                <CreditCard className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center shadow-md">
+                <CreditCard className="w-6 h-6 text-accent-foreground" />
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-1">RFID karta</h4>
