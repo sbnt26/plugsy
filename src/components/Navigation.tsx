@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-const logo = "/lovable-uploads/441b7c15-4b66-4a21-965a-d59a13a821b1.png";
+import { LogoProcessor } from "./LogoProcessor";
+
+const originalLogo = "/lovable-uploads/441b7c15-4b66-4a21-965a-d59a13a821b1.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [processedLogo, setProcessedLogo] = useState<string>(originalLogo);
 
   return (
     <nav className="bg-background/95 backdrop-blur-md border-b border-border sticky top-0 z-50">
@@ -12,7 +15,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="PlugEasy Logo" className="w-8 h-8" />
+            <LogoProcessor 
+              originalLogoUrl={originalLogo} 
+              onProcessed={setProcessedLogo} 
+            />
+            <img src={processedLogo} alt="PlugEasy Logo" className="w-16 h-16" />
           </div>
 
           {/* Desktop Navigation */}
