@@ -157,12 +157,8 @@ const PricingSection = () => {
                 <CreditCard className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold text-foreground mb-1">
-                  Platební karta
-                </h4>
-                <p className="text-muted-foreground">
-                  Bezkontaktní platba kartou přímo na stanici
-                </p>
+                <h4 className="font-semibold text-foreground mb-1">RFID karta</h4>
+                <p className="text-muted-foreground">Bezkontaktní kartou přímo na stanici</p>
               </div>
             </div>
           </div>
