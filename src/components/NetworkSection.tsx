@@ -80,7 +80,8 @@ const NetworkSection = () => {
         <div className="grid md:grid-cols-4 gap-6">
           <Card className="text-center">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl font-bold text-primary mb-2">15+ sítí
+            </div>
               <div className="text-muted-foreground">Nabíjecích stanic</div>
             </CardContent>
           </Card>
