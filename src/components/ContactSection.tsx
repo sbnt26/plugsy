@@ -33,7 +33,7 @@ const ContactSection = () => {
                     Adresa
                   </h4>
                   <p className="text-muted-foreground">
-                    Wenceslas Square 1<br />
+                    U hradu 125/3<br />
                     110 00 Praha 1<br />
                     Česká republika
                   </p>
