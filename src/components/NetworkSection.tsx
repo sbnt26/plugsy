@@ -82,8 +82,7 @@ const NetworkSection = () => {
             <CardContent className="p-6">
               <div className="text-3xl font-bold text-primary mb-2">15+ sítí
             </div>
-              <div className="text-muted-foreground">Připojeno přes OCPI
-            </div>
+              <div className="text-muted-foreground">Připojeno přes OCPI (ČEZ, PRE, E.ON, Shell…)</div>
             </CardContent>
           </Card>
           
