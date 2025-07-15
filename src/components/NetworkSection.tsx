@@ -25,9 +25,8 @@ const NetworkSection = () => {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Strategické umístění
-                  </h4>
+                  <h4 className="font-semibold text-foreground mb-1">Strategické pokrytí
+                </h4>
                   <p className="text-muted-foreground">
                     Naše stanice najdete u obchodních center, restaurací a na hlavních trasách
                   </p>
