@@ -82,7 +82,7 @@ const AboutSection = () => {
                 Dostupnost
               </h4>
               <p className="text-muted-foreground">
-                Chceme, aby nabíjení bylo jednoduché a dostupné pro každého – bez ohledu na síť, značku auta nebo typ uživatele.
+                Chceme, aby nabíjení bylo jednoduché a dostupné pro každého.
               </p>
             </CardContent>
           </Card>
