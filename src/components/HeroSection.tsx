@@ -108,7 +108,7 @@ Jednoduché, transparentní a dostupné pro každého.
 
         {/* Hero Image */}
         <div className="mt-16">
-          <img src="/lovable-uploads/101609b5-0cf6-447c-9307-f0fdad521266.png" alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
+          <img src="/lovable-uploads/c7f8d90e-49e3-4331-a78d-186142011774.png" alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
         </div>
       </div>
     </section>;
