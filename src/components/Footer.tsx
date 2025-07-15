@@ -19,8 +19,8 @@ const Footer = () => {
             <div 
               className="w-[1200px] h-8 bg-primary mb-4" 
               style={{ 
-                WebkitMask: `url(${processedLogo}) no-repeat left top/200%`,
-                mask: `url(${processedLogo}) no-repeat left top/200%`
+                WebkitMask: `url(${processedLogo}) no-repeat left top/150%`,
+                mask: `url(${processedLogo}) no-repeat left top/150%`
               }}
             />
             <p className="text-background/80 mb-4">
