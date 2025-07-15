@@ -12,16 +12,16 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-start">
               <LogoProcessor 
                 originalLogoUrl={originalLogo} 
                 onProcessed={setProcessedLogo} 
               />
               <div 
-                className="w-48 h-16 bg-primary" 
+                className="w-96 h-32 bg-primary" 
                 style={{ 
-                  WebkitMask: `url(${processedLogo}) no-repeat center/contain`,
-                  mask: `url(${processedLogo}) no-repeat center/contain`
+                  WebkitMask: `url(${processedLogo}) no-repeat left center/contain`,
+                  mask: `url(${processedLogo}) no-repeat left center/contain`
                 }}
               />
             </div>
