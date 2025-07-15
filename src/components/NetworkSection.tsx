@@ -27,9 +27,8 @@ const NetworkSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Strategické pokrytí
                 </h4>
-                  <p className="text-muted-foreground">
-                    Naše stanice najdete u obchodních center, restaurací a na hlavních trasách
-                  </p>
+                  <p className="text-muted-foreground">Dostupné v síti ČEZ, PRE, E.ON a dalších – města, nákupní centra, hlavní trasy.
+                </p>
                 </div>
               </div>
 
@@ -38,12 +37,10 @@ const NetworkSection = () => {
                   <Zap className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Rychlé nabíjení
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Výkon až 150 kW pro maximální rychlost nabíjení vašeho vozu
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1">Efektivní nabíjení
+                </h4>
+                  <p className="text-muted-foreground">Podpora AC i DC – až 150 kW výkon pro nejrychlejší dobíjení dostupné na trhu.
+                </p>
                 </div>
               </div>
 
@@ -52,12 +49,9 @@ const NetworkSection = () => {
                   <Shield className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">
-                    Spolehlivost
-                  </h4>
-                  <p className="text-muted-foreground">
-                    99,5% dostupnost stanic díky pravidelné údržbě a monitoringu
-                  </p>
+                  <h4 className="font-semibold text-foreground mb-1">Maximální dostupnost</h4>
+                  <p className="text-muted-foreground">Síť se 99,5% spolehlivostí – Plugsy funguje, když to potřebuješ.
+                </p>
                 </div>
               </div>
 
