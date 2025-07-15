@@ -20,8 +20,8 @@ const Footer = () => {
               <div 
                 className="w-96 h-32 bg-primary" 
                 style={{ 
-                  WebkitMask: `url(${processedLogo}) no-repeat left center/contain`,
-                  mask: `url(${processedLogo}) no-repeat left center/contain`
+                  WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
+                  mask: `url(${processedLogo}) no-repeat left top/contain`
                 }}
               />
             </div>
