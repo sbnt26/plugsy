@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Nabíjení pro všechny
+                Nabíjení pro<br />všechny
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
