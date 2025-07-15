@@ -80,7 +80,7 @@ const AppSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1"> Chytré notifikace
                 </h4>
-                  <p className="text-muted-foreground">Upozornění na dokončení nabíjení, stav účtu nebo problémy.
+                  <p className="text-muted-foreground">Upozornění na nabíjení, stav účtu, problémy.
                 </p>
                 </div>
               </div>
