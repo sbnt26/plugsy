@@ -2,27 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Zap, Shield, Clock } from "lucide-react";
 import networkImage from "@/assets/network-map.jpg";
-
 const NetworkSection = () => {
-  return (
-    <section id="network" className="py-20 bg-background">
+  return <section id="network" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Největší síť v Česku
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Přes 500 rychlonabíjecích stanic na strategických místech po celé republice
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Většina nabíjecích bodů v ČR</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Vš</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img
-              src={networkImage}
-              alt="Mapa nabíjecích stanic"
-              className="w-full h-80 object-cover rounded-xl shadow-elegant"
-            />
+            <img src={networkImage} alt="Mapa nabíjecích stanic" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
           </div>
           
           <div className="space-y-6">
@@ -126,8 +116,6 @@ const NetworkSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default NetworkSection;
