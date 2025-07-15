@@ -15,9 +15,9 @@ const HeroSection = () => {
                 Nabíjení pro<br /><span className="block mt-6">všechny</span>
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl">
-                Největší síť rychlonabíjecích stanic v Česku. Jednoduché, transparentní a dostupné pro každého.
-              </p>
+              <p className="text-xl text-muted-foreground max-w-2xl">1 aplikace, jedna karta, stejná cena.
+Jednoduché, transparentní a dostupné pro každého.
+            </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -56,8 +56,8 @@ const HeroSection = () => {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">500+</p>
-                  <p className="text-sm text-muted-foreground">Stanic</p>
+                  <p className="font-semibold text-foreground">Většina</p>
+                  <p className="text-sm text-muted-foreground">stanic v ČR</p>
                 </div>
               </div>
             </div>
