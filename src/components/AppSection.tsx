@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Smartphone, MapPin, CreditCard, BarChart3, Bell, Settings } from "lucide-react";
-import chargingStation from "@/assets/charging-station.jpg";
+import phoneMockup from "@/assets/phone-mockup-plugsy.jpg";
 const AppSection = () => {
   return <section id="app" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +14,7 @@ const AppSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img src={chargingStation} alt="Nabíjecí stanice s mobilní aplikací" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
+            <img src={phoneMockup} alt="Mobilní aplikace Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">
