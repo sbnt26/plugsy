@@ -6,12 +6,9 @@ const NetworkSection = () => {
   return <section id="network" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            1 aplikace, nabíjení kdekoliv
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Za jednu cenu pro všechny a v celé ČR
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Jedna aplikace, stovky možností</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-center">Za stejnou cenu ve většině sítí napříč Českem.
+        </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
