@@ -138,7 +138,7 @@ const PricingSection = () => {
             Způsoby platby
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col items-center text-center gap-4">
               <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center shadow-md">
                 <Smartphone className="w-6 h-6 text-accent-foreground" />
               </div>
@@ -152,7 +152,7 @@ const PricingSection = () => {
               </div>
             </div>
             
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col items-center text-center gap-4">
               <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center shadow-md">
                 <CreditCard className="w-6 h-6 text-accent-foreground" />
               </div>
