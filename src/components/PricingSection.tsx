@@ -18,7 +18,7 @@ const PricingSection = () => {
               <CardTitle className="text-2xl font-bold text-foreground">
                 AC Nabíjení
               </CardTitle>
-              <div className="text-4xl font-bold text-primary">8,90 Kč</div>
+              <div className="text-4xl font-bold text-primary">≈8,4 Kč</div>
               <div className="text-muted-foreground">za kWh</div>
             </CardHeader>
             <CardContent className="space-y-4">
