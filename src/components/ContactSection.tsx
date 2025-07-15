@@ -64,8 +64,7 @@ const ContactSection = () => {
                     E-mail
                   </h4>
                   <p className="text-muted-foreground">
-                    info@plugeasy.cz<br />
-                    podpora@plugeasy.cz
+                    info@plugsy.cz
                   </p>
                 </div>
               </div>
