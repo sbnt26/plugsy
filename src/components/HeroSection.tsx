@@ -43,7 +43,7 @@ const HeroSection = () => {
                   <CreditCard className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Stejná cena</p>
+                  <p className="font-semibold text-foreground">Fixní cena</p>
                   <p className="text-sm text-muted-foreground">pro všechny</p>
                 </div>
               </div>
