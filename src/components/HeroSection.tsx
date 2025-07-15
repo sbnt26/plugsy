@@ -13,7 +13,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mt-8">
                 Nabíjení pro<br />všechny
                 <span className="text-primary block mt-4">za stejnou cenu</span>
               </h1>
