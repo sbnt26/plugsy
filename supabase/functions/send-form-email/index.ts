@@ -85,7 +85,7 @@ const handler = async (req: Request): Promise<Response> => {
               <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                 <h2 style="color: #667eea; margin-top: 0; font-size: 24px;">Děkujeme za váš zájem, ${inquiryData.name}! 🚗⚡</h2>
                 
-                <p style="font-size: 16px; margin: 20px 0;">Právě jsme přijali váš dotaz ohledně instalace nabíjecích stanic pro elektromobily. Váš zájem o ekologickou budoucnost nás velmi těší!</p>
+                <p style="font-size: 16px; margin: 20px 0;">Právě jsme přijali váš dotaz ohledně Plugsy. Váš zájem o ekologickou budoucnost nás velmi těší!</p>
                 
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; margin: 25px 0;">
                   <h3 style="color: #667eea; margin-top: 0; font-size: 18px;">📋 Shrnutí vašeho dotazu:</h3>
@@ -99,7 +99,7 @@ const handler = async (req: Request): Promise<Response> => {
                 
                 <div style="background: linear-gradient(135deg, #28a745, #20c997); padding: 20px; border-radius: 8px; color: white; margin: 25px 0; text-align: center;">
                   <h3 style="margin: 0 0 10px 0; font-size: 18px;">⏰ Co bude následovat?</h3>
-                  <p style="margin: 0; font-size: 15px;">Náš expert vás kontaktuje do <strong>24 hodin</strong> s konkrétní nabídkou, cenami a termíny instalace přesně podle vašich potřeb.</p>
+                  <p style="margin: 0; font-size: 15px;">Náš expert vás kontaktuje do <strong>24 hodin</strong>a zodpoví vám každý dotaz.</p>
                 </div>
                 
                 <div style="text-align: center; margin: 30px 0;">
@@ -109,7 +109,7 @@ const handler = async (req: Request): Promise<Response> => {
               </div>
               
               <div style="text-align: center; margin-top: 30px; padding: 20px; color: #6c757d; font-size: 14px;">
-                <p style="margin: 0;">Díky, že jste si vybrali Plugsy pro vaši nabíjecí infrastrukturu! 🌱</p>
+                <p style="margin: 0;">Díky, že jste si vybrali Plugsy! 🌱</p>
                 <p style="margin: 10px 0 0 0;"><strong>Tým Plugsy</strong></p>
               </div>
             </body>
@@ -126,7 +126,7 @@ const handler = async (req: Request): Promise<Response> => {
         await resend.emails.send({
           from: "Plugsy <noreply@plugsy.cz>",
           to: ["info@plugsy.cz"], // Replace with your admin email
-          subject: `🚨 NOVÝ DOTAZ - Nabíjecí stanice od ${inquiryData.name}`,
+          subject: `🚨 NOVÝ DOTAZ od ${inquiryData.name}`,
           html: `
             <!DOCTYPE html>
             <html lang="cs">
@@ -142,7 +142,7 @@ const handler = async (req: Request): Promise<Response> => {
               </div>
               
               <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="color: #dc3545; margin-top: 0; font-size: 22px;">⚡ Nový zájem o nabíjecí stanice</h2>
+                <h2 style="color: #dc3545; margin-top: 0; font-size: 22px;">⚡ Nový zájem o Plugsy</h2>
                 
                 <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 8px; margin: 20px 0;">
                   <p style="margin: 0; color: #856404; font-weight: bold;">⏰ PRIORITA: Kontaktovat do 24 hodin!</p>
@@ -178,8 +178,8 @@ const handler = async (req: Request): Promise<Response> => {
                   <h3 style="margin: 0 0 10px 0; font-size: 18px;">📋 Doporučené kroky:</h3>
                   <ul style="text-align: left; margin: 15px 0; padding-left: 20px;">
                     <li style="margin: 8px 0;">Kontaktovat zákazníka do 24 hodin</li>
-                    <li style="margin: 8px 0;">Připravit cenovou nabídku dle lokality</li>
-                    <li style="margin: 8px 0;">Naplánovat konzultaci/obhlídku</li>
+                    <li style="margin: 8px 0;">Připravit argumenty</li>
+                    <li style="margin: 8px 0;">Popsat onboarding</li>
                   </ul>
                 </div>
                 
