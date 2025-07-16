@@ -103,8 +103,7 @@ Tým Plugsy
             </head>
             <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 75%)); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
-                <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">⚡ Plugsy</h1>
-                <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">Budoucnost nabíjení elektromobilů</p>
+                <img src="/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 60px; width: auto;" />
               </div>
               
               <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -185,8 +184,8 @@ Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
             </head>
             <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
-                <h1 style="margin: 0; font-size: 24px; font-weight: bold;">🚨 NOVÝ DOTAZ</h1>
-                <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Plugsy Admin Panel</p>
+                <img src="/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 50px; width: auto;" />
+                <p style="margin: 15px 0 0 0; font-size: 16px; opacity: 0.9;">🚨 NOVÝ DOTAZ - Admin Panel</p>
               </div>
               
               <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -319,8 +318,8 @@ Tým Plugsy
             </head>
             <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 75%)); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
-                <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">⚡ Plugsy</h1>
-                <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">Váš dotaz byl úspěšně přijat</p>
+                <img src="/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 60px; width: auto;" />
+                <p style="color: rgba(255,255,255,0.9); margin: 15px 0 0 0; font-size: 16px;">✅ Váš dotaz byl úspěšně přijat</p>
               </div>
               
               <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -417,8 +416,8 @@ ID zprávy: ${Math.random().toString(36).substr(2, 9).toUpperCase()}
             </head>
             <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
-                <h1 style="margin: 0; font-size: 24px; font-weight: bold;">💬 NOVÁ ZPRÁVA</h1>
-                <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Kontaktní formulář</p>
+                <img src="/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 50px; width: auto;" />
+                <p style="margin: 15px 0 0 0; font-size: 16px; opacity: 0.9;">💬 NOVÁ ZPRÁVA - Kontaktní formulář</p>
               </div>
               
               <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
