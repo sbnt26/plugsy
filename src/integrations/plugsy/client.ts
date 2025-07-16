@@ -41,6 +41,8 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
   }
 
   try {
+    console.log('🔄 Volání Plugsy API:', PLUGSY_API_URL);
+    
     const response = await fetch(PLUGSY_API_URL, {
       method: 'GET',
       headers: {
@@ -50,19 +52,29 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
       },
     });
 
+    console.log('📊 Response status:', response.status, response.statusText);
+    console.log('📊 Response headers:', Object.fromEntries(response.headers.entries()));
+
     if (!response.ok) {
-      throw new Error(`API volání selhalo: ${response.status} ${response.statusText}`);
+      const errorText = await response.text().catch(() => 'No response text');
+      console.error(`❌ API call failed: ${response.status} ${response.statusText}`, errorText);
+      throw new Error(`API volání selhalo: ${response.status} ${response.statusText} - ${errorText}`);
     }
 
     const result = await response.json();
+    console.log('✅ API response:', result);
     
     if (result.error) {
+      console.error('❌ API chyba:', result.error);
       throw new Error(`API chyba: ${result.error}`);
     }
 
     return result.data || [];
   } catch (error) {
-    console.error('Error fetching plugsy data:', error);
+    console.error('❌ Error fetching plugsy data:', error);
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('Nepodařilo se připojit k plugsy.cz API - zkontrolujte edge function');
+    }
     throw error;
   }
 };
