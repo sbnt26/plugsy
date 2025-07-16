@@ -49,7 +49,14 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
     });
 
     if (!response.ok) {
-      throw new Error(`API volání selhalo: ${response.status} ${response.statusText}`);
+      let errorText = 'No response text';
+      try {
+        errorText = await response.text();
+      } catch (e) {
+        errorText = 'No response text';
+      }
+      console.error(`API call failed: ${response.status} ${response.statusText}`, errorText);
+      throw new Error(`API volání selhalo: ${response.status} ${response.statusText} - ${errorText}`);
     }
 
     const result = await response.json();
@@ -61,6 +68,9 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
     return result.data || [];
   } catch (error) {
     console.error('Error fetching plugsy data:', error);
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('Nepodařilo se připojit k plugsy.cz API - zkontrolujte edge function');
+    }
     throw error;
   }
 };
