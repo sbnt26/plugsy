@@ -14,11 +14,20 @@ serve(async (req) => {
 
   // Ověření API tokenu
   const authHeader = req.headers.get('authorization');
-  const expectedToken = Deno.env.get('plugsy_api_token');
+  const expectedToken = Deno.env.get('PLUGSY_API_TOKEN');
+  
+  console.log('🔍 Auth header:', authHeader ? 'Přítomen' : 'Chybí');
+  console.log('🔍 Expected token:', expectedToken ? 'Nastaven' : 'Chybí v secrets');
   
   if (!authHeader || !authHeader.startsWith('Bearer ') || authHeader.split(' ')[1] !== expectedToken) {
+    console.error('❌ Token validation failed');
     return new Response(JSON.stringify({ 
-      error: 'Neplatný nebo chybějící API token' 
+      error: 'Neplatný nebo chybějící API token',
+      debug: {
+        hasAuthHeader: !!authHeader,
+        hasExpectedToken: !!expectedToken,
+        authHeaderFormat: authHeader ? authHeader.substring(0, 20) + '...' : 'none'
+      }
     }), {
       status: 401,
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
