@@ -54,8 +54,8 @@ export default function InquiryForm() {
       }
 
       toast({
-        title: "Úspěch!",
-        description: "Vaša poptávka byla odeslána. Brzy se vám ozveme!",
+        title: "Poptávka byla úspěšně odeslána!",
+        description: "Děkujeme za váš zájem. Brzy se vám ozveme.",
       });
 
       form.reset();

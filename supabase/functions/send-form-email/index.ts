@@ -1,9 +1,6 @@
-import "https://deno.land/x/xhr@0.1.0/mod.ts";
+
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { Resend } from "npm:resend@2.0.0";
-
-const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -59,44 +56,7 @@ const handler = async (req: Request): Promise<Response> => {
         throw new Error("Chyba při ukládání do databáze");
       }
 
-      // Send admin notification email
-      const adminEmailResponse = await resend.emails.send({
-        from: "Plugsy <noreply@plugsy.cz>",
-        to: ["admin@plugsy.cz"], // Změňte na správný admin email
-        subject: "Nová nezávazná poptávka - Plugsy",
-        html: `
-          <h2>Nová nezávazná poptávka</h2>
-          <p><strong>Jméno:</strong> ${inquiryData.name}</p>
-          <p><strong>Email:</strong> ${inquiryData.email}</p>
-          <p><strong>Telefon:</strong> ${inquiryData.phone || "Neuvedeno"}</p>
-          <p><strong>Lokalita:</strong> ${inquiryData.location || "Neuvedeno"}</p>
-          <hr>
-          <p>Tato zpráva byla odeslána z kontaktního formuláře na Plugsy.cz</p>
-        `,
-      });
-
-      // Send confirmation email to user
-      const userEmailResponse = await resend.emails.send({
-        from: "Plugsy <noreply@plugsy.cz>",
-        to: [inquiryData.email],
-        subject: "Potvrzení přijetí vaší poptávky - Plugsy",
-        html: `
-          <h2>Děkujeme za vaši poptávku!</h2>
-          <p>Vážený/á ${inquiryData.name},</p>
-          <p>Obdrželi jsme vaši nezávaznou poptávku a do 24 hodin se vám ozveme s nabídkou.</p>
-          <p>Vaše údaje:</p>
-          <ul>
-            <li><strong>Jméno:</strong> ${inquiryData.name}</li>
-            <li><strong>Email:</strong> ${inquiryData.email}</li>
-            <li><strong>Telefon:</strong> ${inquiryData.phone || "Neuvedeno"}</li>
-            <li><strong>Lokalita:</strong> ${inquiryData.location || "Neuvedeno"}</li>
-          </ul>
-          <hr>
-          <p>S pozdravem,<br>Tým Plugsy</p>
-        `,
-      });
-
-      console.log("Emails sent:", { adminEmailResponse, userEmailResponse });
+      console.log("Inquiry saved successfully to database");
 
     } else if (type === "contact") {
       const contactData: ContactRequest = data;
@@ -117,45 +77,7 @@ const handler = async (req: Request): Promise<Response> => {
         throw new Error("Chyba při ukládání do databáze");
       }
 
-      // Send admin notification email
-      const adminEmailResponse = await resend.emails.send({
-        from: "Plugsy <noreply@plugsy.cz>",
-        to: ["admin@plugsy.cz"], // Změňte na správný admin email
-        subject: `Nová zpráva: ${contactData.subject} - Plugsy`,
-        html: `
-          <h2>Nová zpráva z kontaktního formuláře</h2>
-          <p><strong>Jméno:</strong> ${contactData.name}</p>
-          <p><strong>Email:</strong> ${contactData.email}</p>
-          <p><strong>Telefon:</strong> ${contactData.phone || "Neuvedeno"}</p>
-          <p><strong>Předmět:</strong> ${contactData.subject}</p>
-          <p><strong>Zpráva:</strong></p>
-          <div style="background: #f5f5f5; padding: 15px; border-left: 3px solid #007cba;">
-            ${contactData.message.replace(/\n/g, '<br>')}
-          </div>
-          <hr>
-          <p>Odpovězte přímo na email: ${contactData.email}</p>
-        `,
-      });
-
-      // Send confirmation email to user
-      const userEmailResponse = await resend.emails.send({
-        from: "Plugsy <noreply@plugsy.cz>",
-        to: [contactData.email],
-        subject: "Potvrzení přijetí vaší zprávy - Plugsy",
-        html: `
-          <h2>Děkujeme za vaši zprávu!</h2>
-          <p>Vážený/á ${contactData.name},</p>
-          <p>Obdrželi jsme vaši zprávu s předmětem "${contactData.subject}" a do 24 hodin vám odpovíme.</p>
-          <p>Vaše zpráva:</p>
-          <div style="background: #f5f5f5; padding: 15px; border-left: 3px solid #007cba;">
-            ${contactData.message.replace(/\n/g, '<br>')}
-          </div>
-          <hr>
-          <p>S pozdravem,<br>Tým Plugsy</p>
-        `,
-      });
-
-      console.log("Emails sent:", { adminEmailResponse, userEmailResponse });
+      console.log("Contact message saved successfully to database");
     } else {
       throw new Error("Neplatný typ formuláře");
     }

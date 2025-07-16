@@ -55,8 +55,8 @@ export default function ContactForm() {
       }
 
       toast({
-        title: "Úspěch!",
-        description: "Vaša zpráva byla odeslána. Brzy vám odpovíme!",
+        title: "Zpráva byla úspěšně odeslána!",
+        description: "Děkujeme za vaši zprávu. Brzy vám odpovíme.",
       });
 
       form.reset();
