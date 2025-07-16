@@ -65,7 +65,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Send confirmation email to user
       try {
         await resend.emails.send({
-          from: "Plugsy <noreply@plugsy.cz>",
+          from: "Plugsy <info@plugsy.cz>",
           to: [inquiryData.email],
           subject: "🔌 Děkujeme za váš zájem o nabíjecí stanice Plugsy",
           html: `
@@ -127,7 +127,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Send notification email to admin
       try {
         await resend.emails.send({
-          from: "Plugsy <noreply@plugsy.cz>",
+          from: "Plugsy <info@plugsy.cz>",
           to: ["info@plugsy.cz"], // Replace with your admin email
           subject: `🚨 NOVÝ DOTAZ od ${inquiryData.name}`,
           html: `
@@ -231,7 +231,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Send confirmation email to user
       try {
         await resend.emails.send({
-          from: "Plugsy <noreply@plugsy.cz>",
+          from: "Plugsy <info@plugsy.cz>",
           to: [contactData.email],
           subject: "✅ Potvrzení přijetí vaší zprávy - Plugsy",
           html: `
@@ -308,7 +308,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Send notification email to admin
       try {
         await resend.emails.send({
-          from: "Plugsy <noreply@plugsy.cz>",
+          from: "Plugsy <info@plugsy.cz>",
           to: ["info@plugsy.cz"], // Replace with your admin email
           subject: `💬 NOVÁ ZPRÁVA - ${contactData.subject} od ${contactData.name}`,
           html: `
