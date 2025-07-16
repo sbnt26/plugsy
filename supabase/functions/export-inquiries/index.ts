@@ -14,7 +14,7 @@ serve(async (req) => {
 
   // Ověření API tokenu
   const authHeader = req.headers.get('authorization');
-  const expectedToken = Deno.env.get('PLUGSY_API_TOKEN');
+  const expectedToken = Deno.env.get('plugsy_api_token');
   
   console.log('🔍 Auth header:', authHeader ? 'Přítomen' : 'Chybí');
   console.log('🔍 Expected token:', expectedToken ? 'Nastaven' : 'Chybí v secrets');
