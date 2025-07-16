@@ -182,7 +182,7 @@ Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
               <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Nový dotaz - Plugsy Admin</title>
             </head>
-            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #2c3e50;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center;">
                 <img src="https://lov-elz-8uq.lovableproject.com/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 50px; width: auto; filter: brightness(0) invert(1);" />
                 <p style="color: white; margin: 15px 0 0 0; font-size: 16px; opacity: 0.9;">🚨 NOVÝ DOTAZ - Admin Panel</p>
@@ -414,7 +414,7 @@ ID zprávy: ${Math.random().toString(36).substr(2, 9).toUpperCase()}
               <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Nová zpráva - Plugsy Admin</title>
             </head>
-            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #2c3e50;">
               <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center;">
                 <img src="https://lov-elz-8uq.lovableproject.com/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy" style="height: 50px; width: auto; filter: brightness(0) invert(1);" />
                 <p style="color: white; margin: 15px 0 0 0; font-size: 16px; opacity: 0.9;">💬 NOVÁ ZPRÁVA - Kontaktní formulář</p>
