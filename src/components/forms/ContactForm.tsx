@@ -13,7 +13,7 @@ import { Loader2 } from "lucide-react";
 const contactSchema = z.object({
   name: z.string().min(2, "Jméno musí mít alespoň 2 znaky"),
   email: z.string().email("Neplatný email"),
-  phone: z.string().optional(),
+  phone: z.string().min(1, "Telefon je povinný"),
   subject: z.string().min(3, "Předmět musí mít alespoň 3 znaky"),
   message: z.string().min(10, "Zpráva musí mít alespoň 10 znaků"),
 });
@@ -111,7 +111,7 @@ export default function ContactForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Telefon</FormLabel>
+                <FormLabel>Telefon *</FormLabel>
                 <FormControl>
                   <Input placeholder="+420 123 456 789" {...field} />
                 </FormControl>

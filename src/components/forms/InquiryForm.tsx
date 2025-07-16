@@ -14,8 +14,8 @@ import { Loader2 } from "lucide-react";
 const inquirySchema = z.object({
   name: z.string().min(2, "Jméno musí mít alespoň 2 znaky"),
   email: z.string().email("Neplatný email"),
-  phone: z.string().optional(),
-  location: z.string().optional(),
+  phone: z.string().min(1, "Telefon je povinný"),
+  location: z.string().min(1, "PSČ je povinné"),
 });
 
 type InquiryFormData = z.infer<typeof inquirySchema>;
@@ -114,7 +114,7 @@ export default function InquiryForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Telefon</FormLabel>
+              <FormLabel>Telefon *</FormLabel>
               <FormControl>
                 <Input
                   placeholder="+420 123 456 789"
@@ -131,7 +131,7 @@ export default function InquiryForm() {
           name="location"
           render={({ field }) => (
             <FormItem>
-            <FormLabel>PSČ</FormLabel>
+            <FormLabel>PSČ *</FormLabel>
             <FormControl>
               <Input
                 placeholder="120 00"
