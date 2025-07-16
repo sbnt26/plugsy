@@ -14,15 +14,7 @@ const AppSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img 
-              src="/lovable-uploads/7117454e-03c4-4c30-8374-62c7cdaa16ea.png" 
-              alt="iPhone s aplikací Plugsy pro nabíjení elektromobilů - intuitivní rozhraní a mapa nabíjecích stanic" 
-              title="Mobilní aplikace Plugsy - najděte a plaťte za nabíjení elektromobilů"
-              className="w-full h-80 object-cover rounded-xl shadow-elegant" 
-              loading="lazy"
-              width="400"
-              height="320"
-            />
+            <img src="/lovable-uploads/7117454e-03c4-4c30-8374-62c7cdaa16ea.png" alt="iPhone s aplikací Plugsy pro nabíjení elektromobilů - intuitivní rozhraní a mapa nabíjecích stanic" title="Mobilní aplikace Plugsy - najděte a plaťte za nabíjení elektromobilů" className="w-full h-80 object-cover rounded-xl shadow-elegant" loading="lazy" width="400" height="320" />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">
@@ -100,9 +92,7 @@ const AppSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Personalizace
                 </h4>
-                  <p className="text-muted-foreground">
-                    Nastavte si nabíjení podle vašich potřeb a preferencí
-                  </p>
+                  <p className="text-muted-foreground">Nastav si nabíjení podle vašich potřeb a preferencí</p>
                 </div>
               </div>
             </div>
