@@ -1,6 +1,6 @@
 // Plugsy.cz API konfigurace
 // Napojeno na Plugsy Supabase projekt
-const PLUGSY_API_URL = "https://Plugsy.supabase.co/functions/v1/export-inquiries";
+const PLUGSY_API_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/export-inquiries";
 
 // Zkontrolovat jestli je nastavená skutečná URL
 const isPlugsyConfigured = !PLUGSY_API_URL.includes('dummy');
