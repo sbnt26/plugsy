@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import InquiryForm from "@/components/forms/InquiryForm";
 const HeroSection = () => {
   return (
@@ -61,13 +62,14 @@ const HeroSection = () => {
           {/* Contact Form */}
           <div className="lg:flex lg:justify-end">
             <div className="w-full max-w-md">
-              <div className="text-center mb-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Nezávazná poptávka
-                </h3>
-                <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
-              </div>
-              <InquiryForm />
+              <Card className="shadow-elegant">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-6">
+                    Nezávazná poptávka
+                  </h3>
+                  <InquiryForm />
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
