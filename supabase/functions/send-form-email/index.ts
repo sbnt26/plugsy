@@ -68,6 +68,28 @@ const handler = async (req: Request): Promise<Response> => {
           from: "Plugsy <info@plugsy.cz>",
           to: [inquiryData.email],
           subject: "🔌 Děkujeme za váš zájem o nabíjecí stanice Plugsy",
+          text: `
+Plugsy - Budoucnost nabíjení elektromobilů
+
+Děkujeme za váš zájem, ${inquiryData.name}! 🚗⚡
+
+Právě jsme přijali váš dotaz ohledně Plugsy. Váš zájem o ekologickou budoucnost nás velmi těší!
+
+SHRNUTÍ VAŠEHO DOTAZU:
+- Jméno: ${inquiryData.name}
+- Email: ${inquiryData.email}
+${inquiryData.phone ? `- Telefon: ${inquiryData.phone}` : ''}
+${inquiryData.location ? `- Lokalita: ${inquiryData.location}` : ''}
+
+CO BUDE NÁSLEDOVAT?
+Náš expert vás kontaktuje do 24 hodin a zodpoví vám každý dotaz.
+
+Máte další dotazy? Neváhejte nás kontaktovat:
+📧 info@plugsy.cz | 📱 +420 XXX XXX XXX
+
+Díky, že jste si vybrali Plugsy! 🌱
+Tým Plugsy
+          `,
           html: `
             <!DOCTYPE html>
             <html lang="cs">
@@ -130,6 +152,26 @@ const handler = async (req: Request): Promise<Response> => {
           from: "Plugsy <info@plugsy.cz>",
           to: ["info@plugsy.cz"], // Replace with your admin email
           subject: `🚨 NOVÝ DOTAZ od ${inquiryData.name}`,
+          text: `
+NOVÝ DOTAZ - Plugsy Admin Panel
+
+NOVÝ ZÁJEM O PLUGSY
+
+PRIORITA: Kontaktovat do 24 hodin!
+
+KONTAKTNÍ ÚDAJE ZÁKAZNÍKA:
+- Jméno: ${inquiryData.name}
+- Email: ${inquiryData.email}
+${inquiryData.phone ? `- Telefon: ${inquiryData.phone}` : ''}
+${inquiryData.location ? `- Lokalita: ${inquiryData.location}` : ''}
+
+DOPORUČENÉ KROKY:
+- Kontaktovat zákazníka do 24 hodin
+- Připravit argumenty
+- Popsat onboarding
+
+Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
+          `,
           html: `
             <!DOCTYPE html>
             <html lang="cs">
@@ -234,6 +276,36 @@ const handler = async (req: Request): Promise<Response> => {
           from: "Plugsy <info@plugsy.cz>",
           to: [contactData.email],
           subject: "✅ Potvrzení přijetí vaší zprávy - Plugsy",
+          text: `
+Plugsy - Váš dotaz byl úspěšně přijat
+
+Děkujeme za vaši zprávu, ${contactData.name}! ✉️
+
+Vaše zpráva byla úspěšně doručena a zpracována!
+
+Přijali jsme váš kontakt a náš tým se vám ozve co nejdříve s odpovědí na váš dotaz.
+
+SHRNUTÍ VAŠÍ ZPRÁVY:
+
+Předmět: ${contactData.subject}
+
+Vaše zpráva:
+${contactData.message}
+
+Vaše kontaktní údaje:
+- Jméno: ${contactData.name}
+- Email: ${contactData.email}
+${contactData.phone ? `- Telefon: ${contactData.phone}` : ''}
+
+DOBA ODPOVĚDI:
+Odpovíme vám obvykle do 24-48 hodin v pracovních dnech.
+
+Potřebujete rychlejší odpověď?
+📧 info@plugsy.cz | 📱 +420 XXX XXX XXX
+
+Děkujeme za váš zájem o služby Plugsy! 🌱
+Tým Plugsy
+          `,
           html: `
             <!DOCTYPE html>
             <html lang="cs">
@@ -311,6 +383,27 @@ const handler = async (req: Request): Promise<Response> => {
           from: "Plugsy <info@plugsy.cz>",
           to: ["info@plugsy.cz"], // Replace with your admin email
           subject: `💬 NOVÁ ZPRÁVA - ${contactData.subject} od ${contactData.name}`,
+          text: `
+NOVÁ ZPRÁVA - Plugsy Admin Panel
+
+ZPRÁVA Z KONTAKTNÍHO FORMULÁŘE
+
+Doporučená doba odpovědi: do 24 hodin
+
+ODESÍLATEL:
+- Jméno: ${contactData.name}
+- Email: ${contactData.email}
+${contactData.phone ? `- Telefon: ${contactData.phone}` : ''}
+
+PŘEDMĚT ZPRÁVY:
+${contactData.subject}
+
+OBSAH ZPRÁVY:
+${contactData.message}
+
+Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
+ID zprávy: ${Math.random().toString(36).substr(2, 9).toUpperCase()}
+          `,
           html: `
             <!DOCTYPE html>
             <html lang="cs">
