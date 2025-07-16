@@ -58,16 +58,14 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Contact Form - prominently positioned */}
+          {/* Contact Form */}
           <div className="lg:sticky lg:top-8">
-            <div className="bg-background/95 backdrop-blur-md border border-border/50 rounded-2xl p-6 shadow-2xl">
+            <div className="w-full max-w-md">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-foreground mb-2">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
                   Nezávazná poptávka
                 </h3>
-                <p className="text-muted-foreground">
-                  Napište nám o více informací
-                </p>
+                <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
               </div>
               <InquiryForm />
             </div>
