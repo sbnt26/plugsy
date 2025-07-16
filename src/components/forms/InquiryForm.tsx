@@ -72,98 +72,92 @@ export default function InquiryForm() {
   };
 
   return (
-    <Card className="p-6 bg-white/10 backdrop-blur border-white/20">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-white">Jméno *</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Vaše jméno"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Jméno *</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Vaše jméno"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-white">Email *</FormLabel>
-                <FormControl>
-                  <Input
-                    type="email"
-                    placeholder="vas@email.cz"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email *</FormLabel>
+              <FormControl>
+                <Input
+                  type="email"
+                  placeholder="vas@email.cz"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-          <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-white">Telefon</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="+420 123 456 789"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Telefon</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="+420 123 456 789"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-          <FormField
-            control={form.control}
-            name="location"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-white">Lokalita</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Kde nabíjíte nejčastěji?"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
+        <FormField
+          control={form.control}
+          name="location"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Lokalita</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Kde nabíjíte nejčastěji?"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-          <Button 
-            type="submit" 
-            className="w-full bg-primary hover:bg-primary/90"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? (
-              <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Odesílám...
-              </>
-            ) : (
-              "Odeslat nezávaznou poptávku"
-            )}
-          </Button>
-        </form>
-      </Form>
-    </Card>
+        <Button 
+          type="submit" 
+          className="w-full"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Odesílám...
+            </>
+          ) : (
+            "Odeslat nezávaznou poptávku"
+          )}
+        </Button>
+      </form>
+    </Form>
   );
 }
