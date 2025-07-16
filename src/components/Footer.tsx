@@ -1,19 +1,16 @@
-import { Zap, Mail, Phone, MapPin } from "lucide-react";
-import { useState } from "react";
-import { LogoProcessor } from "./LogoProcessor";
-const originalLogo = "/lovable-uploads/3eae5d7d-a00d-4674-92d8-52b7f381e53e.png";
+import { Mail, Phone, MapPin } from "lucide-react";
+
 const Footer = () => {
-  const [processedLogo, setProcessedLogo] = useState<string>(originalLogo);
   return <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 items-start">
           {/* Company Info */}
           <div>
-            <LogoProcessor originalLogoUrl={originalLogo} onProcessed={setProcessedLogo} />
-            <div className="w-[1200px] h-24 bg-primary mb-2" style={{
-            WebkitMask: `url(${processedLogo}) no-repeat left top/contain`,
-            mask: `url(${processedLogo}) no-repeat left top/contain`
-          }} />
+            <img 
+              src="/lovable-uploads/810e01d3-82d8-4a62-bdce-51c83caa1733.png" 
+              alt="Plugsy logo" 
+              className="h-12 mb-4 object-contain"
+            />
             <p className="text-background/80 mb-4">
               Platforma pro jednoduché nabíjení v celé ČR. Vše pod jednou střechou.
             </p>
