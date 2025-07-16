@@ -7,7 +7,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src="/lovable-uploads/810e01d3-82d8-4a62-bdce-51c83caa1733.png" 
+              src="/lovable-uploads/84cf31f0-9449-4635-9581-46c5331ccc9c.png" 
               alt="Plugsy logo" 
               className="h-12 mb-4 object-contain"
             />
