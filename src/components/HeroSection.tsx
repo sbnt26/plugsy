@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
 import InquiryForm from "@/components/forms/InquiryForm";
 const HeroSection = () => {
-  return <section className="bg-gradient-hero min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[35px]">
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-[35px]">
+  return (
+    <section className="bg-gradient-hero min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -57,14 +58,16 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="lg:flex lg:justify-end">
-            <div className="w-full max-w-md">
+          {/* Contact Form - prominently positioned */}
+          <div className="lg:sticky lg:top-8">
+            <div className="bg-background/95 backdrop-blur-md border border-border/50 rounded-2xl p-6 shadow-2xl">
               <div className="text-center mb-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-2xl font-bold text-foreground mb-2">
                   Nezávazná poptávka
                 </h3>
-                <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
+                <p className="text-muted-foreground">
+                  Napište nám o více informací
+                </p>
               </div>
               <InquiryForm />
             </div>
@@ -73,9 +76,14 @@ const HeroSection = () => {
 
         {/* Hero Image */}
         <div className="mt-16">
-          <img src="/lovable-uploads/c7f8d90e-49e3-4331-a78d-186142011774.png" alt="Nabíjecí stanice" className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" />
+          <img 
+            src="/lovable-uploads/c7f8d90e-49e3-4331-a78d-186142011774.png" 
+            alt="Nabíjecí stanice" 
+            className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" 
+          />
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 export default HeroSection;
