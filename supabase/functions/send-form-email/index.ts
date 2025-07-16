@@ -74,21 +74,24 @@ const handler = async (req: Request): Promise<Response> => {
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Plugsy - Potvrzení zájmu</title>
             </head>
-            <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
-              <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+              <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 75%)); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
                 <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">⚡ Plugsy</h1>
                 <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">Budoucnost nabíjení elektromobilů</p>
               </div>
               
               <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="color: #667eea; margin-top: 0; font-size: 24px;">Děkujeme za váš zájem, ${inquiryData.name}! 🚗⚡</h2>
+                <h2 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 24px;">Děkujeme za váš zájem, ${inquiryData.name}! 🚗⚡</h2>
                 
                 <p style="font-size: 16px; margin: 20px 0;">Právě jsme přijali váš dotaz ohledně Plugsy. Váš zájem o ekologickou budoucnost nás velmi těší!</p>
                 
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; margin: 25px 0;">
-                  <h3 style="color: #667eea; margin-top: 0; font-size: 18px;">📋 Shrnutí vašeho dotazu:</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 65%); margin: 25px 0;">
+                  <h3 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 18px;">📋 Shrnutí vašeho dotazu:</h3>
                   <ul style="list-style: none; padding: 0; margin: 15px 0;">
                     <li style="padding: 8px 0; border-bottom: 1px solid #e9ecef;"><strong>👤 Jméno:</strong> ${inquiryData.name}</li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #e9ecef;"><strong>📧 Email:</strong> ${inquiryData.email}</li>
@@ -97,7 +100,7 @@ const handler = async (req: Request): Promise<Response> => {
                   </ul>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #28a745, #20c997); padding: 20px; border-radius: 8px; color: white; margin: 25px 0; text-align: center;">
+                <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 55%)); padding: 20px; border-radius: 8px; color: white; margin: 25px 0; text-align: center;">
                   <h3 style="margin: 0 0 10px 0; font-size: 18px;">⏰ Co bude následovat?</h3>
                   <p style="margin: 0; font-size: 15px;">Náš expert vás kontaktuje do <strong>24 hodin</strong>a zodpoví vám každý dotaz.</p>
                 </div>
@@ -133,23 +136,26 @@ const handler = async (req: Request): Promise<Response> => {
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Nový dotaz - Plugsy Admin</title>
             </head>
-            <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
-              <div style="background: linear-gradient(135deg, #dc3545, #fd7e14); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+              <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
                 <h1 style="margin: 0; font-size: 24px; font-weight: bold;">🚨 NOVÝ DOTAZ</h1>
                 <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Plugsy Admin Panel</p>
               </div>
               
               <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="color: #dc3545; margin-top: 0; font-size: 22px;">⚡ Nový zájem o Plugsy</h2>
+                <h2 style="color: hsl(135, 76%, 55%); margin-top: 0; font-size: 22px;">⚡ Nový zájem o Plugsy</h2>
                 
                 <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 8px; margin: 20px 0;">
                   <p style="margin: 0; color: #856404; font-weight: bold;">⏰ PRIORITA: Kontaktovat do 24 hodin!</p>
                 </div>
                 
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #dc3545; margin: 20px 0;">
-                  <h3 style="color: #dc3545; margin-top: 0; font-size: 18px;">👤 Kontaktní údaje zákazníka:</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 55%); margin: 20px 0;">
+                  <h3 style="color: hsl(135, 76%, 55%); margin-top: 0; font-size: 18px;">👤 Kontaktní údaje zákazníka:</h3>
                   <table style="width: 100%; border-collapse: collapse;">
                     <tr style="border-bottom: 1px solid #dee2e6;">
                       <td style="padding: 10px; font-weight: bold; width: 30%;">Jméno:</td>
@@ -157,12 +163,12 @@ const handler = async (req: Request): Promise<Response> => {
                     </tr>
                     <tr style="border-bottom: 1px solid #dee2e6;">
                       <td style="padding: 10px; font-weight: bold;">Email:</td>
-                      <td style="padding: 10px;"><a href="mailto:${inquiryData.email}" style="color: #667eea; text-decoration: none;">${inquiryData.email}</a></td>
+                      <td style="padding: 10px;"><a href="mailto:${inquiryData.email}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${inquiryData.email}</a></td>
                     </tr>
                     ${inquiryData.phone ? `
                     <tr style="border-bottom: 1px solid #dee2e6;">
                       <td style="padding: 10px; font-weight: bold;">Telefon:</td>
-                      <td style="padding: 10px;"><a href="tel:${inquiryData.phone}" style="color: #667eea; text-decoration: none;">${inquiryData.phone}</a></td>
+                      <td style="padding: 10px;"><a href="tel:${inquiryData.phone}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${inquiryData.phone}</a></td>
                     </tr>
                     ` : ''}
                     ${inquiryData.location ? `
@@ -174,7 +180,7 @@ const handler = async (req: Request): Promise<Response> => {
                   </table>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #28a745, #20c997); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
+                <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 55%)); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
                   <h3 style="margin: 0 0 10px 0; font-size: 18px;">📋 Doporučené kroky:</h3>
                   <ul style="text-align: left; margin: 15px 0; padding-left: 20px;">
                     <li style="margin: 8px 0;">Kontaktovat zákazníka do 24 hodin</li>
@@ -184,8 +190,8 @@ const handler = async (req: Request): Promise<Response> => {
                 </div>
                 
                 <div style="text-align: center; margin: 25px 0;">
-                  <a href="mailto:${inquiryData.email}" style="background: #667eea; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 5px;">📧 Odpovědět emailem</a>
-                  ${inquiryData.phone ? `<a href="tel:${inquiryData.phone}" style="background: #28a745; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 5px;">📱 Zavolat</a>` : ''}
+                  <a href="mailto:${inquiryData.email}" style="background: hsl(135, 76%, 65%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 5px;">📧 Odpovědět emailem</a>
+                  ${inquiryData.phone ? `<a href="tel:${inquiryData.phone}" style="background: hsl(135, 76%, 55%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 5px;">📱 Zavolat</a>` : ''}
                 </div>
               </div>
               
@@ -234,16 +240,19 @@ const handler = async (req: Request): Promise<Response> => {
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Plugsy - Potvrzení zprávy</title>
             </head>
-            <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
-              <div style="background: linear-gradient(135deg, #17a2b8, #6f42c1); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+              <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 75%)); padding: 30px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
                 <h1 style="color: white; margin: 0; font-size: 28px; font-weight: bold;">⚡ Plugsy</h1>
                 <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 16px;">Váš dotaz byl úspěšně přijat</p>
               </div>
               
               <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="color: #17a2b8; margin-top: 0; font-size: 24px;">Děkujeme za vaši zprávu, ${contactData.name}! ✉️</h2>
+                <h2 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 24px;">Děkujeme za vaši zprávu, ${contactData.name}! ✉️</h2>
                 
                 <div style="background: #d1ecf1; border: 1px solid #bee5eb; padding: 15px; border-radius: 8px; margin: 20px 0;">
                   <p style="margin: 0; color: #0c5460; font-weight: bold;">✅ Vaše zpráva byla úspěšně doručena a zpracována!</p>
@@ -251,8 +260,8 @@ const handler = async (req: Request): Promise<Response> => {
                 
                 <p style="font-size: 16px; margin: 20px 0;">Přijali jsme váš kontakt a náš tým se vám ozve co nejdříve s odpovědí na váš dotaz.</p>
                 
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #17a2b8; margin: 25px 0;">
-                  <h3 style="color: #17a2b8; margin-top: 0; font-size: 18px;">📋 Shrnutí vaší zprávy:</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 65%); margin: 25px 0;">
+                  <h3 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 18px;">📋 Shrnutí vaší zprávy:</h3>
                   
                   <div style="margin: 15px 0;">
                     <p style="margin: 0 0 5px 0; font-weight: bold; color: #495057;">📝 Předmět:</p>
@@ -263,7 +272,7 @@ const handler = async (req: Request): Promise<Response> => {
                   </div>
                   
                   <div style="margin: 20px 0 0 0;">
-                    <h4 style="color: #17a2b8; margin: 0 0 10px 0; font-size: 16px;">👤 Vaše kontaktní údaje:</h4>
+                    <h4 style="color: hsl(135, 76%, 65%); margin: 0 0 10px 0; font-size: 16px;">👤 Vaše kontaktní údaje:</h4>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                       <li style="padding: 5px 0; border-bottom: 1px solid #e9ecef;"><strong>Jméno:</strong> ${contactData.name}</li>
                       <li style="padding: 5px 0; border-bottom: 1px solid #e9ecef;"><strong>Email:</strong> ${contactData.email}</li>
@@ -272,7 +281,7 @@ const handler = async (req: Request): Promise<Response> => {
                   </div>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #28a745, #20c997); padding: 20px; border-radius: 8px; color: white; margin: 25px 0; text-align: center;">
+                <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 55%)); padding: 20px; border-radius: 8px; color: white; margin: 25px 0; text-align: center;">
                   <h3 style="margin: 0 0 10px 0; font-size: 18px;">⏰ Doba odpovědi</h3>
                   <p style="margin: 0; font-size: 15px;">Odpovíme vám obvykle do <strong>24-48 hodin</strong> v pracovních dnech.</p>
                 </div>
@@ -308,23 +317,26 @@ const handler = async (req: Request): Promise<Response> => {
             <head>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Nová zpráva - Plugsy Admin</title>
             </head>
-            <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
-              <div style="background: linear-gradient(135deg, #6f42c1, #17a2b8); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+              <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center; color: white;">
                 <h1 style="margin: 0; font-size: 24px; font-weight: bold;">💬 NOVÁ ZPRÁVA</h1>
                 <p style="margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">Kontaktní formulář</p>
               </div>
               
               <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="color: #6f42c1; margin-top: 0; font-size: 22px;">📨 Zpráva z kontaktního formuláře</h2>
+                <h2 style="color: hsl(135, 76%, 55%); margin-top: 0; font-size: 22px;">📨 Zpráva z kontaktního formuláře</h2>
                 
                 <div style="background: #e2e3f1; border: 1px solid #d1d5db; padding: 15px; border-radius: 8px; margin: 20px 0;">
                   <p style="margin: 0; color: #374151; font-weight: bold;">⏰ Doporučená doba odpovědi: do 24 hodin</p>
                 </div>
                 
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #6f42c1; margin: 20px 0;">
-                  <h3 style="color: #6f42c1; margin-top: 0; font-size: 18px;">👤 Odesílatel:</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 55%); margin: 20px 0;">
+                  <h3 style="color: hsl(135, 76%, 55%); margin-top: 0; font-size: 18px;">👤 Odesílatel:</h3>
                   <table style="width: 100%; border-collapse: collapse;">
                     <tr style="border-bottom: 1px solid #dee2e6;">
                       <td style="padding: 10px; font-weight: bold; width: 25%;">Jméno:</td>
@@ -332,28 +344,28 @@ const handler = async (req: Request): Promise<Response> => {
                     </tr>
                     <tr style="border-bottom: 1px solid #dee2e6;">
                       <td style="padding: 10px; font-weight: bold;">Email:</td>
-                      <td style="padding: 10px;"><a href="mailto:${contactData.email}" style="color: #667eea; text-decoration: none;">${contactData.email}</a></td>
+                      <td style="padding: 10px;"><a href="mailto:${contactData.email}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${contactData.email}</a></td>
                     </tr>
                     ${contactData.phone ? `
                     <tr>
                       <td style="padding: 10px; font-weight: bold;">Telefon:</td>
-                      <td style="padding: 10px;"><a href="tel:${contactData.phone}" style="color: #667eea; text-decoration: none;">${contactData.phone}</a></td>
+                      <td style="padding: 10px;"><a href="tel:${contactData.phone}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${contactData.phone}</a></td>
                     </tr>
                     ` : ''}
                   </table>
                 </div>
                 
                 <div style="margin: 25px 0;">
-                  <h3 style="color: #6f42c1; margin: 0 0 15px 0; font-size: 18px;">📝 Předmět zprávy:</h3>
+                  <h3 style="color: hsl(135, 76%, 55%); margin: 0 0 15px 0; font-size: 18px;">📝 Předmět zprávy:</h3>
                   <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #dee2e6; font-weight: bold; font-size: 16px;">${contactData.subject}</div>
                 </div>
                 
                 <div style="margin: 25px 0;">
-                  <h3 style="color: #6f42c1; margin: 0 0 15px 0; font-size: 18px;">💬 Obsah zprávy:</h3>
+                  <h3 style="color: hsl(135, 76%, 55%); margin: 0 0 15px 0; font-size: 18px;">💬 Obsah zprávy:</h3>
                   <div style="background: white; padding: 20px; border-radius: 8px; border: 2px solid #e9ecef; white-space: pre-wrap; font-size: 15px; line-height: 1.6;">${contactData.message}</div>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, #28a745, #20c997); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
+                <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 55%)); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
                   <h3 style="margin: 0 0 15px 0; font-size: 18px;">🎯 Rychlé akce:</h3>
                   <div>
                     <a href="mailto:${contactData.email}?subject=Re: ${contactData.subject}&body=Dobrý den ${contactData.name},%0D%0A%0D%0ADěkujeme za váš dotaz..." style="background: rgba(255,255,255,0.2); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin: 5px; border: 1px solid rgba(255,255,255,0.3);">📧 Odpovědět</a>
