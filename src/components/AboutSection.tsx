@@ -24,9 +24,7 @@ const AboutSection = () => {
               Proto jsme vytvořili Plugsy: jednu appku, jednu kartu a jednu férovou cenu – ve většině veřejných sítí.
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro všechny lidi.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro všechny.</p>
           </div>
           
           <div className="grid grid-cols-2 gap-6">
