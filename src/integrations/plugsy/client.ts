@@ -1,6 +1,6 @@
 // Plugsy.cz API konfigurace
-// TODO: Nahradit skutečnou API URL z plugsy.cz projektu
-const PLUGSY_API_URL = "https://dummy-project.supabase.co/functions/v1/export-inquiries"; // Placeholder
+// TODO: Nahradit [plugsy-project-id] skutečným project ID
+const PLUGSY_API_URL = "https://[plugsy-project-id].supabase.co/functions/v1/export-inquiries";
 
 // Zkontrolovat jestli je nastavená skutečná URL
 const isPlugsyConfigured = !PLUGSY_API_URL.includes('dummy');
