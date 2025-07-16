@@ -20,9 +20,6 @@ const AboutSection = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Proto jsme vytvořili Plugsy: jednu appku, jednu kartu a jednu férovou cenu – ve většině veřejných sítí.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Proto jsme vytvořili Plugsy: jednu appku, jednu kartu a jednu férovou cenu – ve většině veřejných sítí.
-            </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">Naším cílem je zjednodušit přechod na elektromobilitu a učinit z ní každodenní realitu pro všechny.</p>
           </div>
