@@ -59,7 +59,7 @@ const HeroSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:sticky lg:top-8">
+          <div className="lg:flex lg:justify-end">
             <div className="w-full max-w-md">
               <div className="text-center mb-6">
                 <h3 className="text-xl font-semibold text-foreground mb-2">
