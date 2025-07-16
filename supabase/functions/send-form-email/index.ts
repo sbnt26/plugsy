@@ -38,7 +38,9 @@ const handler = async (req: Request): Promise<Response> => {
     const supabase = createClient(supabaseUrl!, supabaseKey!);
 
     // Initialize Resend client
-    const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+    console.log("Resend API key:", resendApiKey ? "EXISTS" : "MISSING");
+    const resend = new Resend(resendApiKey);
 
     console.log(`Processing ${type} form submission`, data);
 
