@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Zap, Shield, Clock } from "lucide-react";
-const networkImage = "/lovable-uploads/17441ba9-9c94-4870-a83f-5afea2bdfb40.png";
+const networkImage = "/lovable-uploads/e1e75b40-73d0-46a8-9a59-14ec82bbffda.png";
 const NetworkSection = () => {
   return <section id="network" className="bg-background py-[35px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
