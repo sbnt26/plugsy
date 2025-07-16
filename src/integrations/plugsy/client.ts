@@ -1,6 +1,7 @@
 // Plugsy.cz API konfigurace
 // Napojeno na Plugsy Supabase projekt
 const PLUGSY_API_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/export-inquiries";
+const TEST_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/test-health";
 
 // Zkontrolovat jestli je nastavená skutečná URL
 const isPlugsyConfigured = !PLUGSY_API_URL.includes('dummy');
@@ -38,6 +39,18 @@ export const mapPlugsyToAdmin = (plugsyData: PlugsyInquiry) => {
 export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
   if (!isPlugsyConfigured) {
     throw new Error('Plugsy.cz API není nakonfigurován. Doplňte API URL v src/integrations/plugsy/client.ts');
+  }
+
+  // Nejdřív zkusme test endpoint
+  try {
+    console.log('🧪 Testování základní konektivity...');
+    const testResponse = await fetch(TEST_URL, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' }
+    });
+    console.log('🧪 Test response:', testResponse.status, await testResponse.text());
+  } catch (testError) {
+    console.error('🧪 Test failed:', testError);
   }
 
   try {
