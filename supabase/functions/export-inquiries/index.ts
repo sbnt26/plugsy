@@ -7,9 +7,22 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
+  console.log(`🚀 Export-inquiries function called: ${req.method} ${req.url}`);
+  
   // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
+  }
+
+  // Simple health check
+  if (req.url.includes('health')) {
+    return new Response(JSON.stringify({ 
+      status: 'ok', 
+      timestamp: new Date().toISOString(),
+      function: 'export-inquiries'
+    }), {
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
   }
 
   // Ověření API tokenu
