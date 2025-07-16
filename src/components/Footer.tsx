@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import plugsyLogo from "@/assets/plugsy-logo-no-bg.png";
 
 const Footer = () => {
   return <footer className="bg-foreground text-background">
@@ -7,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img 
-              src="/lovable-uploads/810e01d3-82d8-4a62-bdce-51c83caa1733.png" 
+              src={plugsyLogo} 
               alt="Plugsy logo" 
               className="h-12 mb-4 object-contain"
             />
