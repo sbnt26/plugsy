@@ -98,7 +98,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <Card className="shadow-elegant">
-            <CardContent className="p-6 text-center">
+            <CardContent className="p-6">
               <h3 className="text-xl font-bold text-foreground mb-6">
                 Napište nám
               </h3>
