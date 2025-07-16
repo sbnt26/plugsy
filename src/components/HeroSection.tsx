@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { MapPin, Clock, CreditCard, Smartphone } from "lucide-react";
+import InquiryForm from "@/components/forms/InquiryForm";
 const HeroSection = () => {
   return <section className="bg-gradient-hero min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[35px]">
@@ -61,44 +59,15 @@ const HeroSection = () => {
 
           {/* Contact Form */}
           <div className="lg:flex lg:justify-end">
-            <Card className="w-full max-w-md shadow-elegant">
-              <CardContent className="p-6">
-                <div className="space-y-4">
-                  <div className="text-center">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Nezávazná poptávka
-                    </h3>
-                    <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
-                  </div>
-
-                  <form className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Jméno a příjmení</Label>
-                      <Input id="name" placeholder="Vaše jméno" className="border-border focus:ring-primary" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email">E-mail</Label>
-                      <Input id="email" type="email" placeholder="vas@email.cz" className="border-border focus:ring-primary" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Telefonní číslo</Label>
-                      <Input id="phone" type="tel" placeholder="+420 123 456 789" className="border-border focus:ring-primary" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="location">Lokalita</Label>
-                      <Input id="location" placeholder="PSČ" className="border-border focus:ring-primary" />
-                    </div>
-
-                    <Button type="submit" className="w-full" variant="hero">
-                      Odeslat poptávku
-                    </Button>
-                  </form>
-                </div>
-              </CardContent>
-            </Card>
+            <div className="w-full max-w-md">
+              <div className="text-center mb-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Nezávazná poptávka
+                </h3>
+                <p className="text-sm text-muted-foreground">Napište nám o více informací</p>
+              </div>
+              <InquiryForm />
+            </div>
           </div>
         </div>
 

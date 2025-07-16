@@ -1,9 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import ContactForm from "@/components/forms/ContactForm";
 const ContactSection = () => {
   return <section id="contact" className="bg-background py-[40px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,43 +102,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold text-foreground mb-6">
                 Napište nám
               </h3>
-              
-              <form className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">Jméno</Label>
-                    <Input id="firstName" placeholder="Vaše jméno" className="border-border focus:ring-primary" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Příjmení</Label>
-                    <Input id="lastName" placeholder="Vaše příjmení" className="border-border focus:ring-primary" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input id="email" type="email" placeholder="vas@email.cz" className="border-border focus:ring-primary" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Telefonní číslo</Label>
-                  <Input id="phone" type="tel" placeholder="+420 123 456 789" className="border-border focus:ring-primary" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Předmět</Label>
-                  <Input id="subject" placeholder="Stručně popište váš dotaz" className="border-border focus:ring-primary" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Zpráva</Label>
-                  <Textarea id="message" placeholder="Podrobně popište váš dotaz nebo problém..." rows={5} className="border-border focus:ring-primary" />
-                </div>
-
-                <Button type="submit" className="w-full" variant="hero">
-                  Odeslat zprávu
-                </Button>
-              </form>
+              <ContactForm />
             </CardContent>
           </Card>
         </div>
