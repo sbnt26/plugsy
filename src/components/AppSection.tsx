@@ -92,7 +92,7 @@ const AppSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Personalizace
                 </h4>
-                  <p className="text-muted-foreground">Nastav si nabíjení podle vašich potřeb a preferencí</p>
+                  <p className="text-muted-foreground">Nastav si nabíjení podle svých potřeb a preferencí</p>
                 </div>
               </div>
             </div>
@@ -104,12 +104,8 @@ const AppSection = () => {
           <Card className="bg-gradient-primary p-8 text-center shadow-elegant">
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-primary-foreground">
-                  Stáhněte si aplikaci zdarma
-                </h3>
-                <p className="text-primary-foreground/90 max-w-2xl mx-auto">
-                  Dostupná pro iOS i Android. Začněte nabíjet už dnes!
-                </p>
+                <h3 className="text-2xl font-bold text-primary-foreground">Stáhni si aplikaci zdarma</h3>
+                <p className="text-primary-foreground/90 max-w-2xl mx-auto">Dostupná pro iOS i Android. Začni nabíjet už dnes!</p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

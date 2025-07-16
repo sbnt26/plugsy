@@ -5,20 +5,14 @@ const ContactSection = () => {
   return <section id="contact" className="bg-background py-[40px]" role="region" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Kontaktujte nás
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Máte otázky? Rádi vám pomůžeme s čímkoli, co potřebujete vědět.
-          </p>
+          <h2 id="contact-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">Kontaktuj nás</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Máš otázky? Rádi ti pomůžeme s čímkoli, co potřebuješ vědět.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-foreground">
-              Jak nás najdete
-            </h3>
+            <h3 className="text-2xl font-bold text-foreground">Jak nás najdeš</h3>
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -88,9 +82,7 @@ const ContactSection = () => {
                 <h4 className="font-semibold text-foreground mb-2">
                   Nouzová pomoc
                 </h4>
-                <p className="text-muted-foreground mb-3">
-                  Máte problém s nabíjením? Kontaktujte naši 24/7 technickou podporu:
-                </p>
+                <p className="text-muted-foreground mb-3">Máš problém s nabíjením? Kontaktuj naši 24/7 technickou podporu:</p>
                 <p className="font-semibold text-primary text-lg">+420 123 456 789</p>
               </CardContent>
             </Card>
@@ -99,9 +91,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="shadow-elegant">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-foreground mb-6">
-                Napište nám
-              </h3>
+              <h3 className="text-xl font-bold text-foreground mb-6">Napiš nám</h3>
               <ContactForm />
             </CardContent>
           </Card>
