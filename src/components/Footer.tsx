@@ -9,7 +9,8 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/810e01d3-82d8-4a62-bdce-51c83caa1733.png" 
               alt="Plugsy logo" 
-              className="h-12 mb-4 object-contain"
+              className="h-12 mb-4 object-contain mix-blend-normal"
+              style={{ filter: 'drop-shadow(0 0 0px transparent)' }}
             />
             <p className="text-background/80 mb-4">
               Platforma pro jednoduché nabíjení v celé ČR. Vše pod jednou střechou.
