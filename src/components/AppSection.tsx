@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, MapPin, CreditCard, BarChart3, Bell, Settings } from "lucide-react";
 import iphoneMockup from "@/assets/iphone-mockup-plugsy.jpg";
 const AppSection = () => {
-  return <section id="app" className="py-20 bg-background">
+  return <section id="app" className="py-20 bg-background" role="region" aria-labelledby="app-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Celé Česko. Jedna aplikace.
+          <h2 id="app-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">Celé Česko. Jedna aplikace.
         </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Najdi stanici, spusť nabíjení a plať bez přirážek – vše jednoduše v Plugsy app.
         </p>
@@ -14,7 +14,15 @@ const AppSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <img src="/lovable-uploads/7117454e-03c4-4c30-8374-62c7cdaa16ea.png" alt="iPhone s aplikací Plugsy" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
+            <img 
+              src="/lovable-uploads/7117454e-03c4-4c30-8374-62c7cdaa16ea.png" 
+              alt="iPhone s aplikací Plugsy pro nabíjení elektromobilů - intuitivní rozhraní a mapa nabíjecích stanic" 
+              title="Mobilní aplikace Plugsy - najděte a plaťte za nabíjení elektromobilů"
+              className="w-full h-80 object-cover rounded-xl shadow-elegant" 
+              loading="lazy"
+              width="400"
+              height="320"
+            />
           </div>
           
           <div className="order-1 lg:order-2 space-y-8">

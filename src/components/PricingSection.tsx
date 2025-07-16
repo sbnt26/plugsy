@@ -2,10 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, CreditCard, Smartphone } from "lucide-react";
 const PricingSection = () => {
-  return <section id="pricing" className="py-20 bg-gradient-hero">
+  return <section id="pricing" className="py-20 bg-gradient-hero" role="region" aria-labelledby="pricing-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 id="pricing-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Stejná cena za kWh. 
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

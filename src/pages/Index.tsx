@@ -7,17 +7,23 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import SEOOptimizations from "@/components/SEOOptimizations";
+import SocialMediaMeta from "@/components/SocialMediaMeta";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEOOptimizations />
+      <SocialMediaMeta />
       <Navigation />
-      <HeroSection />
-      <NetworkSection />
-      <PricingSection />
-      <AppSection />
-      <AboutSection />
-      <ContactSection />
+      <main role="main">
+        <HeroSection />
+        <NetworkSection />
+        <PricingSection />
+        <AppSection />
+        <AboutSection />
+        <ContactSection />
+      </main>
       <Footer />
       <CookieBanner />
     </div>

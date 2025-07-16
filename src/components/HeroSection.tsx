@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import InquiryForm from "@/components/forms/InquiryForm";
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-hero min-h-screen flex items-center">
+    <section className="bg-gradient-hero min-h-screen flex items-center" role="main">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Content */}
@@ -78,8 +78,12 @@ const HeroSection = () => {
         <div className="mt-16">
           <img 
             src="/lovable-uploads/c7f8d90e-49e3-4331-a78d-186142011774.png" 
-            alt="Nabíjecí stanice" 
+            alt="Nabíjecí stanice pro elektromobily v České republice - Plugsy síť rychlonabíjecích stanic" 
+            title="Nabíjecí stanice Plugsy - rychlé a spolehlivé nabíjení elektromobilů"
             className="w-full h-64 md:h-96 object-cover rounded-xl shadow-elegant" 
+            loading="lazy"
+            width="1200"
+            height="600"
           />
         </div>
       </div>

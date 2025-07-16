@@ -3,17 +3,25 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Zap, Shield, Clock } from "lucide-react";
 const networkImage = "/lovable-uploads/e1e75b40-73d0-46a8-9a59-14ec82bbffda.png";
 const NetworkSection = () => {
-  return <section id="network" className="bg-background py-[35px]">
+  return <section id="network" className="bg-background py-[35px]" role="region" aria-labelledby="network-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Jedna aplikace, stovky možností</h2>
+          <h2 id="network-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">Jedna aplikace, stovky možností</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-center">Za stejnou cenu ve většině sítí napříč Českem.
         </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img src={networkImage} alt="Mapa nabíjecích stanic" className="w-full h-80 object-cover rounded-xl shadow-elegant" />
+            <img 
+              src={networkImage} 
+              alt="Mapa nabíjecích stanic pro elektromobily v České republice - síť Plugsy pokrývá města Praha, Brno, Ostrava a další" 
+              title="Síť nabíjecích stanic Plugsy - pokrytí po celé České republice"
+              className="w-full h-80 object-cover rounded-xl shadow-elegant" 
+              loading="lazy"
+              width="600"
+              height="320"
+            />
           </div>
           
           <div className="space-y-6">

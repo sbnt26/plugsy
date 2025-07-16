@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Award, Leaf, Target, MapPin, Zap, Shield, Clock, Network, Coins, Smartphone } from "lucide-react";
 const AboutSection = () => {
-  return <section id="about" className="py-20 bg-gradient-hero">
+  return <section id="about" className="py-20 bg-gradient-hero" role="region" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">O Plugsy</h2>
+          <h2 id="about-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-4">O Plugsy</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">První česká platforma, která sjednocuje veřejné nabíjení elektromobilů napříč sítěmi – bez roamingových přirážek, bez chaosu, s jedinou aplikací.
         </p>
         </div>

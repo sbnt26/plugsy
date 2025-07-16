@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <url>
+    <loc>https://plugsy.cz/</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/" />
+    <image:image>
+      <image:loc>https://plugsy.cz/lovable-uploads/2e55e6f1-88b0-42bc-9fbc-87cd12e28a5d.png</image:loc>
+      <image:title>Plugsy - Nabíjení elektromobilů</image:title>
+      <image:caption>Nejlepší platforma pro nabíjení elektromobilů v České republice</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://plugsy.cz/#network</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#network" />
+  </url>
+  
+  <url>
+    <loc>https://plugsy.cz/#pricing</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#pricing" />
+  </url>
+  
+  <url>
+    <loc>https://plugsy.cz/#app</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#app" />
+  </url>
+  
+  <url>
+    <loc>https://plugsy.cz/#about</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#about" />
+  </url>
+  
+  <url>
+    <loc>https://plugsy.cz/#contact</loc>
+    <lastmod>2024-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#contact" />
+  </url>
+  
+</urlset>
