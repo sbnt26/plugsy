@@ -9,12 +9,14 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import SEOOptimizations from "@/components/SEOOptimizations";
 import SocialMediaMeta from "@/components/SocialMediaMeta";
+import AnalyticsTracking from "@/components/AnalyticsTracking";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOOptimizations />
       <SocialMediaMeta />
+      <AnalyticsTracking />
       <Navigation />
       <main role="main">
         <HeroSection />

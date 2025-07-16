@@ -8,7 +8,7 @@
   
   <url>
     <loc>https://plugsy.cz/</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/" />
@@ -21,7 +21,7 @@
   
   <url>
     <loc>https://plugsy.cz/#network</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#network" />
@@ -29,7 +29,7 @@
   
   <url>
     <loc>https://plugsy.cz/#pricing</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#pricing" />
@@ -37,7 +37,7 @@
   
   <url>
     <loc>https://plugsy.cz/#app</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#app" />
@@ -45,7 +45,7 @@
   
   <url>
     <loc>https://plugsy.cz/#about</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#about" />
@@ -53,7 +53,7 @@
   
   <url>
     <loc>https://plugsy.cz/#contact</loc>
-    <lastmod>2024-01-16</lastmod>
+    <lastmod>2025-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="cs" href="https://plugsy.cz/#contact" />
