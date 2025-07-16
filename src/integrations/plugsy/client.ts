@@ -55,11 +55,11 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
 
   try {
     console.log('🔄 Volání Plugsy API:', PLUGSY_API_URL);
-    console.log('🔑 Používaný token:', 'sb_secret_SLVxSiN--KP0MxOKzoZYGA_bptsXWHm');
+    console.log('🔑 Používaný token:', 'PLUGSY_API_2024_abc123def456');
     
     const headers = {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer sb_secret_SLVxSiN--KP0MxOKzoZYGA_bptsXWHm`,
+      'Authorization': `Bearer PLUGSY_API_2024_abc123def456`,
       'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM'
     };
     
