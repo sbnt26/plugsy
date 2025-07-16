@@ -185,46 +185,46 @@ Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
               <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
               <title>Nový dotaz - Plugsy Admin</title>
             </head>
-            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #ffffff; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #09090b;">
-              <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center;">
+            <body style="font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 600px; margin: 0 auto; padding: 20px; background-color: hsl(135, 76%, 85%);">
+              <div style="background: linear-gradient(135deg, hsl(135, 76%, 45%), hsl(135, 76%, 35%)); padding: 25px; border-radius: 10px; margin-bottom: 25px; text-align: center;">
                 <img src="https://lov-elz-8uq.lovableproject.com/lovable-uploads/0c597499-3242-4920-8644-dad091cfc410.png" alt="Plugsy Logo" style="height: 50px; width: auto; margin-bottom: 10px;" />
                 <p style="color: white; margin: 10px 0 0 0; font-size: 18px; font-weight: 600;">🚨 NOVÝ DOTAZ - Admin Panel</p>
               </div>
               
-              <div style="background: #1a1a1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border: 1px solid #333;">
-                <h2 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 22px; text-align: center;">⚡ Nový zájem o Plugsy</h2>
+              <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 2px solid hsl(135, 76%, 55%);">
+                <h2 style="color: hsl(135, 76%, 35%); margin-top: 0; font-size: 22px; text-align: center;">⚡ Nový zájem o Plugsy</h2>
                 
-                <div style="background: #2a1810; border: 2px solid #d4870a; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center;">
-                  <p style="margin: 0; color: #f59e0b; font-weight: bold; font-size: 16px;">⏰ PRIORITA: Kontaktovat do 24 hodin!</p>
+                <div style="background: #fff3cd; border: 2px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: center;">
+                  <p style="margin: 0; color: #92400e; font-weight: bold; font-size: 16px;">⏰ PRIORITA: Kontaktovat do 24 hodin!</p>
                 </div>
                 
-                <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 55%); margin: 20px 0;">
-                  <h3 style="color: hsl(135, 76%, 65%); margin-top: 0; font-size: 18px;">👤 Kontaktní údaje zákazníka:</h3>
+                <div style="background: hsl(135, 76%, 95%); padding: 20px; border-radius: 8px; border-left: 4px solid hsl(135, 76%, 45%); margin: 20px 0;">
+                  <h3 style="color: hsl(135, 76%, 25%); margin-top: 0; font-size: 18px;">👤 Kontaktní údaje zákazníka:</h3>
                   <table style="width: 100%; border-collapse: collapse;">
-                    <tr style="border-bottom: 1px solid #444;">
-                      <td style="padding: 12px 8px; font-weight: bold; width: 30%; color: #ffffff;">Jméno:</td>
-                      <td style="padding: 12px 8px; color: #ffffff;">${inquiryData.name}</td>
+                    <tr style="border-bottom: 1px solid hsl(135, 76%, 70%);">
+                      <td style="padding: 12px 8px; font-weight: bold; width: 30%; color: #1a1a1a;">Jméno:</td>
+                      <td style="padding: 12px 8px; color: #1a1a1a;">${inquiryData.name}</td>
                     </tr>
-                    <tr style="border-bottom: 1px solid #444;">
-                      <td style="padding: 12px 8px; font-weight: bold; color: #ffffff;">Email:</td>
-                      <td style="padding: 12px 8px;"><a href="mailto:${inquiryData.email}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${inquiryData.email}</a></td>
+                    <tr style="border-bottom: 1px solid hsl(135, 76%, 70%);">
+                      <td style="padding: 12px 8px; font-weight: bold; color: #1a1a1a;">Email:</td>
+                      <td style="padding: 12px 8px;"><a href="mailto:${inquiryData.email}" style="color: hsl(135, 76%, 35%); text-decoration: none; font-weight: 600;">${inquiryData.email}</a></td>
                     </tr>
                     ${inquiryData.phone ? `
-                    <tr style="border-bottom: 1px solid #444;">
-                      <td style="padding: 12px 8px; font-weight: bold; color: #ffffff;">Telefon:</td>
-                      <td style="padding: 12px 8px;"><a href="tel:${inquiryData.phone}" style="color: hsl(135, 76%, 65%); text-decoration: none;">${inquiryData.phone}</a></td>
+                    <tr style="border-bottom: 1px solid hsl(135, 76%, 70%);">
+                      <td style="padding: 12px 8px; font-weight: bold; color: #1a1a1a;">Telefon:</td>
+                      <td style="padding: 12px 8px;"><a href="tel:${inquiryData.phone}" style="color: hsl(135, 76%, 35%); text-decoration: none; font-weight: 600;">${inquiryData.phone}</a></td>
                     </tr>
                     ` : ''}
                     ${inquiryData.location ? `
                     <tr>
-                      <td style="padding: 12px 8px; font-weight: bold; color: #ffffff;">Lokalita:</td>
-                      <td style="padding: 12px 8px; color: #ffffff;">${inquiryData.location}</td>
+                      <td style="padding: 12px 8px; font-weight: bold; color: #1a1a1a;">Lokalita:</td>
+                      <td style="padding: 12px 8px; color: #1a1a1a;">${inquiryData.location}</td>
                     </tr>
                     ` : ''}
                   </table>
                 </div>
                 
-                <div style="background: linear-gradient(135deg, hsl(135, 76%, 65%), hsl(135, 76%, 55%)); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
+                <div style="background: linear-gradient(135deg, hsl(135, 76%, 55%), hsl(135, 76%, 45%)); padding: 20px; border-radius: 8px; color: white; text-align: center; margin: 25px 0;">
                   <h3 style="margin: 0 0 15px 0; font-size: 18px;">📋 Doporučené kroky:</h3>
                   <ul style="text-align: left; margin: 15px 0; padding-left: 20px; list-style-type: none;">
                     <li style="margin: 10px 0; padding-left: 20px; position: relative;">✓ Kontaktovat zákazníka do 24 hodin</li>
@@ -235,12 +235,12 @@ Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}
                 </div>
                 
                 <div style="text-align: center; margin: 25px 0;">
-                  <a href="mailto:${inquiryData.email}" style="background: hsl(135, 76%, 65%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin: 5px; border: none;">📧 Odpovědět emailem</a>
-                  ${inquiryData.phone ? `<a href="tel:${inquiryData.phone}" style="background: hsl(135, 76%, 55%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin: 5px;">📱 Zavolat</a>` : ''}
+                  <a href="mailto:${inquiryData.email}" style="background: hsl(135, 76%, 45%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin: 5px; border: none;">📧 Odpovědět emailem</a>
+                  ${inquiryData.phone ? `<a href="tel:${inquiryData.phone}" style="background: hsl(135, 76%, 35%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; margin: 5px;">📱 Zavolat</a>` : ''}
                 </div>
               </div>
               
-              <div style="text-align: center; margin-top: 25px; padding: 15px; color: #888; font-size: 12px;">
+              <div style="text-align: center; margin-top: 25px; padding: 15px; color: #4a5568; font-size: 12px;">
                 <p style="margin: 0;">Plugsy Admin Dashboard - ${new Date().toLocaleString('cs-CZ')}</p>
                 <p style="margin: 5px 0 0 0;">Automatický email systém | Čas doručení: ${new Date().toLocaleString('cs-CZ')}</p>
               </div>
