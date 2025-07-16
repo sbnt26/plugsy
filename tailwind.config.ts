@@ -73,7 +73,7 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)'
 			},
 			backgroundColor: {
-				'gradient-hero-dark': 'hsl(var(--gradient-hero-dark))'
+				'gradient-hero-green': 'hsl(var(--gradient-hero-green))'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
