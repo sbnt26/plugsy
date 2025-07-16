@@ -41,7 +41,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(135 76% 65%), hsl(135 76% 75%));
     --gradient-hero: linear-gradient(180deg, hsl(135 76% 97%), hsl(0 0% 100%));
     --gradient-hero-green: hsl(135 76% 97%);
-    --nav-background: 135 100% 97%;
+    --nav-background: 135 60% 98%;
     --shadow-elegant: 0 10px 30px -10px hsl(135 76% 65% / 0.2);
     --shadow-glow: 0 0 40px hsl(135 76% 65% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,7 +99,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(135 76% 65%), hsl(135 76% 75%));
     --gradient-hero: linear-gradient(180deg, hsl(135 76% 8%), hsl(222.2 84% 4.9%));
     --gradient-hero-green: hsl(135 76% 8%);
-    --nav-background: 135 100% 97%;
+    --nav-background: 135 60% 98%;
     --shadow-elegant: 0 10px 30px -10px hsl(135 76% 65% / 0.3);
     --shadow-glow: 0 0 40px hsl(135 76% 65% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
