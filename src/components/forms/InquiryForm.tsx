@@ -131,10 +131,10 @@ export default function InquiryForm() {
           name="location"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Lokalita</FormLabel>
-              <FormControl>
-                <Input
-                  placeholder="Kde nabíjíte nejčastěji?"
+            <FormLabel>PSČ</FormLabel>
+            <FormControl>
+              <Input
+                placeholder="120 00"
                   {...field}
                 />
               </FormControl>
