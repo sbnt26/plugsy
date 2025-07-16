@@ -45,7 +45,7 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM',
+        'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM`,
         'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM'
       },
     });
