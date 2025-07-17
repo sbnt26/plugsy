@@ -2,6 +2,7 @@
 // Napojeno na Plugsy Supabase projekt
 const PLUGSY_API_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/export-inquiries";
 const TEST_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/test-health";
+const SIMPLE_TEST_URL = "https://uzrvewklanbxeuyifvip.supabase.co/functions/v1/export-inquiries?test";
 
 // Zkontrolovat jestli je nastavená skutečná URL
 const isPlugsyConfigured = !PLUGSY_API_URL.includes('dummy');
@@ -51,6 +52,18 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
     console.log('🧪 Test response:', testResponse.status, await testResponse.text());
   } catch (testError) {
     console.error('🧪 Test failed:', testError);
+  }
+
+  // Zkusme nejdřív simple test bez tokenů
+  try {
+    console.log('🧪 Zkouším jednoduchý test...');
+    const simpleTest = await fetch(SIMPLE_TEST_URL, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' }
+    });
+    console.log('🧪 Simple test response:', simpleTest.status, await simpleTest.text());
+  } catch (simpleError) {
+    console.error('🧪 Simple test failed:', simpleError);
   }
 
   try {

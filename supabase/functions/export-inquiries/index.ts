@@ -25,6 +25,37 @@ serve(async (req) => {
     });
   }
 
+  // Test endpoint bez token validace - jen pro testing
+  if (req.url.includes('test')) {
+    console.log('🧪 Test endpoint called');
+    try {
+      const supabase = createClient(
+        Deno.env.get('SUPABASE_URL') ?? '',
+        Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
+      );
+
+      const { data, error } = await supabase
+        .from('inquiries')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .limit(5);
+
+      return new Response(JSON.stringify({ 
+        status: 'test_ok',
+        data: data || [],
+        count: data?.length || 0,
+        timestamp: new Date().toISOString()
+      }), {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    } catch (error: any) {
+      return new Response(JSON.stringify({ error: error.message }), {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+  }
+
   // Ověření API tokenu
   const authHeader = req.headers.get('authorization');
   const expectedToken = Deno.env.get('PLUGSY_API_TOKEN');
