@@ -58,7 +58,7 @@ serve(async (req) => {
 
   // Ověření API tokenu
   const authHeader = req.headers.get('authorization');
-  const expectedToken = Deno.env.get('PLUGSY_API_TOKEN');
+  const expectedToken = Deno.env.get('PLUGSY_API_TOKEN') || 'sb_secret_pu83-MmrZAg-MJnBwdY1UQ_xaAOINPc';
   
   console.log('🔍 Auth header:', authHeader);
   console.log('🔍 Expected token from secret:', expectedToken);

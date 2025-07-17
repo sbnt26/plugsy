@@ -42,37 +42,34 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
     throw new Error('Plugsy.cz API není nakonfigurován. Doplňte API URL v src/integrations/plugsy/client.ts');
   }
 
-  // Nejdřív zkusme test endpoint
   try {
-    console.log('🧪 Testování základní konektivity...');
-    const testResponse = await fetch(TEST_URL, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' }
-    });
-    console.log('🧪 Test response:', testResponse.status, await testResponse.text());
-  } catch (testError) {
-    console.error('🧪 Test failed:', testError);
-  }
+    // Získáme token z našeho get-plugsy-token API
+    console.log('🔑 Získávám token z admin API...');
+    const tokenResponse = await fetch('/api/get-plugsy-token');
+    const tokenData = await tokenResponse.json();
+    const actualToken = tokenData.token;
+    
+    console.log('🔑 Získaný token:', actualToken);
 
-  // Zkusme nejdřív simple test bez tokenů
-  try {
-    console.log('🧪 Zkouším jednoduchý test...');
-    const simpleTest = await fetch(SIMPLE_TEST_URL, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' }
-    });
-    console.log('🧪 Simple test response:', simpleTest.status, await simpleTest.text());
-  } catch (simpleError) {
-    console.error('🧪 Simple test failed:', simpleError);
-  }
+    // Nejdřív zkusme test endpoint bez tokenů
+    try {
+      console.log('🧪 Zkouším jednoduchý test...');
+      const simpleTest = await fetch(SIMPLE_TEST_URL, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      const simpleTestText = await simpleTest.text();
+      console.log('🧪 Simple test response:', simpleTest.status, simpleTestText);
+    } catch (simpleError) {
+      console.error('🧪 Simple test failed:', simpleError);
+    }
 
-  try {
     console.log('🔄 Volání Plugsy API:', PLUGSY_API_URL);
-    console.log('🔑 Používaný token:', 'PLUGSY_API_2024_abc123def456');
+    console.log('🔑 Používaný token:', actualToken);
     
     const headers = {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer PLUGSY_API_2024_abc123def456`,
+      'Authorization': `Bearer ${actualToken}`,
       'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM'
     };
     
