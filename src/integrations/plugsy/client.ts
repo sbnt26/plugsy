@@ -48,17 +48,22 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
     
     console.log('🔑 Používaný token:', actualToken);
 
-    // Nejdřív zkusme test endpoint bez tokenů
+    // Nejdřív zkusme úplně základní test
     try {
-      console.log('🧪 Zkouším jednoduchý test...');
-      const simpleTest = await fetch(SIMPLE_TEST_URL, {
+      console.log('🧪 Zkouším základní ping edge function...');
+      const basicTest = await fetch(PLUGSY_API_URL, {
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 
+          'Content-Type': 'application/json',
+          'Cache-Control': 'no-cache'
+        }
       });
-      const simpleTestText = await simpleTest.text();
-      console.log('🧪 Simple test response:', simpleTest.status, simpleTestText);
-    } catch (simpleError) {
-      console.error('🧪 Simple test failed:', simpleError);
+      console.log('🧪 Basic ping response:', basicTest.status);
+      const basicText = await basicTest.text();
+      console.log('🧪 Basic ping text:', basicText);
+    } catch (basicError) {
+      console.error('🧪 Basic ping FAILED:', basicError);
+      console.error('🧪 Error details:', basicError.message);
     }
 
     console.log('🔄 Volání Plugsy API:', PLUGSY_API_URL);
