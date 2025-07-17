@@ -43,43 +43,13 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
   }
 
   try {
-    // Používáme správný token
-    const actualToken = 'PLUGSY_API_2024_abc123def456';
-    
-    console.log('🔑 Používaný token:', actualToken);
-
-    // Nejdřív zkusme úplně základní test
-    try {
-      console.log('🧪 Zkouším základní ping edge function...');
-      const basicTest = await fetch(PLUGSY_API_URL, {
-        method: 'GET',
-        headers: { 
-          'Content-Type': 'application/json',
-          'Cache-Control': 'no-cache'
-        }
-      });
-      console.log('🧪 Basic ping response:', basicTest.status);
-      const basicText = await basicTest.text();
-      console.log('🧪 Basic ping text:', basicText);
-    } catch (basicError) {
-      console.error('🧪 Basic ping FAILED:', basicError);
-      console.error('🧪 Error details:', basicError.message);
-    }
-
-    console.log('🔄 Volání Plugsy API:', PLUGSY_API_URL);
-    console.log('🔑 Používaný token:', actualToken);
-    
-    const headers = {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${actualToken}`,
-      'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6cnZld2tsYW5ieGV1eWlmdmlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI2MTc1NTksImV4cCI6MjA2ODE5MzU1OX0.bQ7GPUlS47E6HfhXa9jTV0wx72GNEYPasocwLxGPrYM'
-    };
-    
-    console.log('📋 Headers:', headers);
+    console.log('🔄 Volání Plugsy API (export-inquiries):', PLUGSY_API_URL);
     
     const response = await fetch(PLUGSY_API_URL, {
       method: 'GET',
-      headers,
+      headers: {
+        'Content-Type': 'application/json'
+      }
     });
 
     console.log('📊 Response status:', response.status, response.statusText);
