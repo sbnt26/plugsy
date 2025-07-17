@@ -29,11 +29,25 @@ serve(async (req) => {
   const authHeader = req.headers.get('authorization');
   const expectedToken = Deno.env.get('PLUGSY_API_TOKEN');
   
-  console.log('🔍 Auth header:', authHeader ? 'Přítomen' : 'Chybí');
-  console.log('🔍 Expected token:', expectedToken ? 'Nastaven' : 'Chybí v secrets');
+  console.log('🔍 Auth header:', authHeader);
+  console.log('🔍 Expected token from secret:', expectedToken);
+  console.log('🔍 Secret exists:', !!expectedToken);
+  
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    const receivedToken = authHeader.split(' ')[1];
+    console.log('🔍 Received token:', receivedToken);
+    console.log('🔍 Token match:', receivedToken === expectedToken);
+    console.log('🔍 Token lengths:', `received: ${receivedToken?.length}, expected: ${expectedToken?.length}`);
+  }
   
   if (!authHeader || !authHeader.startsWith('Bearer ') || authHeader.split(' ')[1] !== expectedToken) {
     console.error('❌ Token validation failed');
+    console.error('❌ Details:', {
+      hasAuthHeader: !!authHeader,
+      hasExpectedToken: !!expectedToken,
+      authHeaderFormat: authHeader ? authHeader.substring(0, 30) + '...' : 'none',
+      expectedTokenStart: expectedToken ? expectedToken.substring(0, 10) + '...' : 'none'
+    });
     return new Response(JSON.stringify({ 
       error: 'Neplatný nebo chybějící API token',
       debug: {
