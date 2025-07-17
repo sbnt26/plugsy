@@ -43,13 +43,10 @@ export const fetchPlugsyInquiries = async (): Promise<PlugsyInquiry[]> => {
   }
 
   try {
-    // Získáme token z našeho get-plugsy-token API
-    console.log('🔑 Získávám token z admin API...');
-    const tokenResponse = await fetch('/api/get-plugsy-token');
-    const tokenData = await tokenResponse.json();
-    const actualToken = tokenData.token;
+    // Používáme správný token
+    const actualToken = 'PLUGSY_API_2024_abc123def456';
     
-    console.log('🔑 Získaný token:', actualToken);
+    console.log('🔑 Používaný token:', actualToken);
 
     // Nejdřív zkusme test endpoint bez tokenů
     try {
